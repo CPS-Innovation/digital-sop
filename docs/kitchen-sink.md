@@ -102,9 +102,8 @@ For example, `:material-account-child-outline:` produces :material-account-child
 
 ## PlantUML Diagrams
 
-PlantUML diagrams use the PlantUML web service to render diagrams. They support click to zoom, allowing more complex
-diagrams. Take a look at [Architecture->Diagramming](architecture/diagramming.md) for a more thorough explainer on how
-to use PlantUML diagrams for technical documentation.
+PlantUML diagrams use the PlantUML web service to render diagrams. They support click to zoom, allowing for more complex
+diagrams.
 
 ```diagram-plantuml
 @startuml
