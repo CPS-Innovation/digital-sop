@@ -585,7 +585,6 @@
 *[CPAN]: Comprehensive Perl Archive Network
 *[CP/M]: Control Program/Monitor
 *[CPRI]: Common Public Radio Interface
-*[CPS]: characters per second
 *[CPU]: Central Processing Unit
 *[CQS]: Command–query separation
 *[CQRS]: Command Query Responsibility Segregation
