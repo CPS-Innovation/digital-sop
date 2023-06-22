@@ -1,0 +1,38 @@
+INHERIT: mkdocs.development.yml
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - pymdownx.details
+  - pymdownx.keys
+  - tables
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.snippets:
+      auto_append:
+        - snippets/abbreviations.md
+        - snippets/work-in-progress.md
+  - pymdownx.superfences:
+      custom_fences:
+        - name: diagram-plantuml
+          class: diagram-plantuml
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - toc:
+      permalink: true
+      title: On this page
+
+plugins:
+  - git-revision-date-localized:
+      enabled: true
+      enable_creation_date: true
+      type: timeago
+  - search:
+      lang: en
+  - section-index

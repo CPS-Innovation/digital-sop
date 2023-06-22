@@ -1,0 +1,38 @@
+/** Theme configuration -- Edit these values **/
+:root {
+    --theme-main-colour-hue: 209;
+    --theme-main-colour-saturation: 95%;
+    --theme-main-colour-lightness: 32%;
+    --theme-main-colour-alpha: 1.0;
+}
+
+/** Theme setup **/
+:root {
+    --md-primary-fg-color: hsla(
+            var(--theme-main-colour-hue),
+            var(--theme-main-colour-saturation),
+            var(--theme-main-colour-lightness),
+            var(--theme-main-colour-alpha)
+    );
+    --md-primary-fg-color--light: hsla(
+            var(--theme-main-colour-hue),
+            var(--theme-main-colour-saturation),
+            calc(var(--theme-main-colour-lightness) / 0.9),
+            var(--theme-main-colour-alpha)
+    );
+    --md-primary-fg-color--dark: hsla(
+            var(--theme-main-colour-hue),
+            var(--theme-main-colour-saturation),
+            calc(var(--theme-main-colour-lightness) * 0.9),
+            var(--theme-main-colour-alpha)
+    );
+}
+
+.md-header__button.md-logo img, .md-header__button.md-logo svg {
+    height: 3rem;
+    width: 3rem;
+}
+
+a {
+    text-decoration: underline;
+}
