@@ -36,3 +36,25 @@
 a {
     text-decoration: underline;
 }
+
+blockquote {
+    padding: 0 40px 0;
+    position: relative;
+    border-left-color: rgba(0, 0, 0, 0) !important;
+}
+
+blockquote p {
+    font-style: italic;
+    font-size: 35px;
+    font-weight: 700;
+    padding-left: 40px;
+    /*text-align: center;*/
+}
+
+blockquote:before {
+    position: absolute;
+    top: -85px;
+    content: "“";
+    font-size: 200px;
+    color: rgba(0, 0, 0, 0.1);
+}
