@@ -23,6 +23,7 @@ plugins:
   - search:
       lang: en
   - section-index
+  - tags
 
 extra_css:
   - assets/stylesheets/theme.css
