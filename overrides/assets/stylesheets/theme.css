@@ -57,3 +57,10 @@ blockquote:before {
     font-size: 200px;
     color: rgba(0, 0, 0, 0.1);
 }
+
+.mermaid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
