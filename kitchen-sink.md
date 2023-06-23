@@ -28,7 +28,7 @@ You can include keyboard shortcuts in your documentation using the following for
 > To copy, press ++ctrl+c++ or ++cmd+c++
 
 ```
-To copy, press ++ctrl+c++ or ++cmd+c++
+> To copy, press ++ctrl+c++ or ++cmd+c++
 ```
 
 ## Definition lists
