@@ -1,7 +1,4 @@
----
-title: New API Criteria
----
-
+# New API Criteria
 
 ## Criteria for Creating a New API
 
