@@ -14,7 +14,7 @@ New APIs **must** meet the following criteria before being considered for develo
 
 ## Criteria for Going to Production
 
-> You API source code is public.
+> Your API source code is public.
 
 * Publish your application source code using a public git repository.
 * Use open source code to improve transparency, flexibility and accountability.
