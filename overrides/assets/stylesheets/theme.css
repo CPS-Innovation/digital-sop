@@ -38,7 +38,7 @@ a {
 }
 
 blockquote {
-    padding: 0 40px 0;
+    padding: 10px 20px 10px;
     position: relative;
     border-left-color: rgba(0, 0, 0, 0) !important;
 }
@@ -46,14 +46,13 @@ blockquote {
 blockquote p {
     font-style: italic;
     font-size: 35px;
-    font-weight: 700;
-    padding-left: 40px;
-    /*text-align: center;*/
+    padding-left: 20px;
 }
 
 blockquote:before {
     position: absolute;
-    top: -85px;
+    top: -45px;
+    left: -15px;
     content: "“";
     font-size: 200px;
     color: rgba(0, 0, 0, 0.1);
