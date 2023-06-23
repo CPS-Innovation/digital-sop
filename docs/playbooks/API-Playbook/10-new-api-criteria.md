@@ -38,10 +38,10 @@ New APIs **must** meet the following criteria before being considered for develo
 
 * You have identified a product owner for the API.
 * You have identified which team is responsible for:
-  * Iterating and improving the API frequently.
-  * Continually scanning for and remediating security vulnerabilities.
-  * Monitoring the API and responding to alerts and incidents.
-  * Optimise the performance of all parts of the API.
+    * Iterating and improving the API frequently.
+    * Continually scanning for and remediating security vulnerabilities.
+    * Monitoring the API and responding to alerts and incidents.
+    * Optimise the performance of all parts of the API.
 * You have an incident response plan that is documented and can be accessed by all team members, security and 
   operations.
 * You have a plan to decommission the API should it no longer provide value.
