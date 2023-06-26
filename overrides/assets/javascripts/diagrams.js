@@ -547,8 +547,12 @@ const deflate = (function() {
       /* We check for insufficient lookahead only every 8th comparison;
 			 * the 256th check will be made at strstart+258.
 			 */
-      while (zip_window[++scanp] === zip_window[++matchp] && zip_window[++scanp] === zip_window[++matchp] && zip_window[++scanp] === zip_window[++matchp] && zip_window[++scanp] === zip_window[++matchp] && zip_window[++scanp] === zip_window[++matchp] && zip_window[++scanp] === zip_window[++matchp] && zip_window[++scanp] === zip_window[++matchp] && zip_window[++scanp] === zip_window[++matchp] && scanp < strendp) {
-        // do nothing
+      while (zip_window[scanp] === zip_window[matchp] && scanp < strendp) {
+        for (let i = 0; i < 8; i++) {
+          if (zip_window[++scanp] !== zip_window[++matchp]) {
+            break;
+          }
+        }
       }
       len = zip_MAX_MATCH - (strendp - scanp);
       scanp = strendp - zip_MAX_MATCH;
@@ -623,7 +627,7 @@ const deflate = (function() {
 	 * matches. It is used only for the fast compression options.
 	 */
   function zip_deflate_fast() {
-    while (zip_lookahead !== 0 && zip_qhead === null) {
+    while (zip_lookahead !== 0) {
       let flush; // set if current block must be flushed
       /* Insert the string window[strstart .. strstart+2] in the
 			 * dictionary, and set hash_head to the head of the hash chain:
@@ -691,7 +695,7 @@ const deflate = (function() {
 
   function zip_deflate_better() {
     /* Process the input block. */
-    while (zip_lookahead !== 0 && zip_qhead === null) {
+    while (zip_lookahead !== 0) {
       /* Insert the string window[strstart .. strstart+2] in the
 			 * dictionary, and set hash_head to the head of the hash chain:
 			 */
