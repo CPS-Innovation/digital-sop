@@ -1,9 +1,8 @@
 name: Publish
 
 on:
-  push:
-    branches:
-      - main
+  - push
+  - pull_request
 
 jobs:
   build:
@@ -26,9 +25,10 @@ jobs:
       - name: Build
         env:
           GOOGLE_ANALYTICS_TAG: ${{ secrets.GOOGLE_ANALYTICS_TAG }}
-        run: mkdocs build
+        run: mkdocs build --strict
 
       - name: Package
+        if: github.ref == 'refs/heads/main'
         run: |
           tar \
             --dereference --hard-dereference \
@@ -39,6 +39,7 @@ jobs:
 
       - name: Upload
         uses: actions/upload-artifact@v3
+        if: github.ref == 'refs/heads/main'
         with:
           name: github-pages
           path: ${{ runner.temp }}/artifact.tar
@@ -48,6 +49,7 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
     permissions:
       pages: write
       id-token: write

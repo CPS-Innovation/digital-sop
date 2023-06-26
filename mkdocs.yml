@@ -35,4 +35,3 @@ plugins:
       type: timeago
   - search:
       lang: en
-  - section-index

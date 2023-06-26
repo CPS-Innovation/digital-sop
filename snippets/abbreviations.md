@@ -5,6 +5,7 @@
 *[CoP]: Community of Practice
 *[MADR]: Markdown Any Decision Record
 *[CPS]: Crown Prosecution Service
+*[CPS']: Crown Prosecution Services
 *[RBAC]: Role Based Access Control
 *[CNCF]: Cloud Native Computing Foundation
 
