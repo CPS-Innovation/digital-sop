@@ -627,7 +627,7 @@ const deflate = (function() {
 	 * matches. It is used only for the fast compression options.
 	 */
   function zip_deflate_fast() {
-    while (zip_lookahead !== 0 && zip_qhead === null) {
+    while (zip_lookahead !== 0) {
       let flush; // set if current block must be flushed
       /* Insert the string window[strstart .. strstart+2] in the
 			 * dictionary, and set hash_head to the head of the hash chain:
@@ -695,7 +695,7 @@ const deflate = (function() {
 
   function zip_deflate_better() {
     /* Process the input block. */
-    while (zip_lookahead !== 0 && zip_qhead === null) {
+    while (zip_lookahead !== 0) {
       /* Insert the string window[strstart .. strstart+2] in the
 			 * dictionary, and set hash_head to the head of the hash chain:
 			 */
