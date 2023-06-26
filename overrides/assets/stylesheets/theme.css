@@ -1,8 +1,8 @@
 /** Theme configuration -- Edit these values **/
 :root {
-    --theme-main-colour-hue: 209;
-    --theme-main-colour-saturation: 95%;
-    --theme-main-colour-lightness: 32%;
+    --theme-main-colour-hue: 207;
+    --theme-main-colour-saturation: 100%;
+    --theme-main-colour-lightness: 33%;
     --theme-main-colour-alpha: 1.0;
 }
 
