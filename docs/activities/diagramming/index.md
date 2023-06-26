@@ -1,4 +1,5 @@
 ---
+title: Diagramming
 hide:
   - toc
 tags:
