@@ -547,8 +547,12 @@ const deflate = (function() {
       /* We check for insufficient lookahead only every 8th comparison;
 			 * the 256th check will be made at strstart+258.
 			 */
-      while (zip_window[++scanp] === zip_window[++matchp] && zip_window[++scanp] === zip_window[++matchp] && zip_window[++scanp] === zip_window[++matchp] && zip_window[++scanp] === zip_window[++matchp] && zip_window[++scanp] === zip_window[++matchp] && zip_window[++scanp] === zip_window[++matchp] && zip_window[++scanp] === zip_window[++matchp] && zip_window[++scanp] === zip_window[++matchp] && scanp < strendp) {
-        // do nothing
+      while (zip_window[scanp] === zip_window[matchp] && scanp < strendp) {
+        for (let i = 0; i < 8; i++) {
+          if (zip_window[++scanp] !== zip_window[++matchp]) {
+            break;
+          }
+        }
       }
       len = zip_MAX_MATCH - (strendp - scanp);
       scanp = strendp - zip_MAX_MATCH;
