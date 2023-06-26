@@ -65,3 +65,9 @@ blockquote:before {
     flex-direction: row;
     justify-content: center;
 }
+
+.md-button--disabled {
+    pointer-events: none;
+    cursor: default;
+    color: #6d6d6d !important;
+}
