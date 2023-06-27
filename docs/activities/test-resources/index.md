@@ -1,11 +1,11 @@
 # Resources for Testing
 
 ## Test Environments
-Add an impage of the different environments here
+There are a number of Test Instances available and the following table compares their features, the most accurate representation of the Production System are CIN4 and the Model office.
+![A table of test environments and their features](./test-environments.png)
 
 ## How to get access to a test environment
 
-There are a number of Test Instances available, the most accurate representation of the Production System are CIN4 and the Model office.
 The process for getting access to them is the same.
 
 Navigate to the service request on CPS ServiceNow link below:
