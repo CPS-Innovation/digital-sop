@@ -1,9 +1,9 @@
-#Resources for Testing
+# Resources for Testing
 
-##Test Environments
+## Test Environments
 Add an impage of the different environments here
 
-##How to get access to a test environment
+## How to get access to a test environment
 
 There are a number of Test Instances available, the most accurate representation of the Production System are CIN4 and the Model office.
 The process for getting access to them is the same.
