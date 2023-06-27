@@ -2,7 +2,7 @@
 
 ## Test Environments
 There are a number of Test Instances available and the following table compares their features, the most accurate representation of the Production System are CIN4 and the Model office.
-![A table of test environments and their features](./test-environments.png)
+![A table of test environments and their features](./CMS-environments.xlsx)
 
 ## How to get access to a test environment
 
