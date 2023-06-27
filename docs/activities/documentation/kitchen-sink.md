@@ -15,7 +15,7 @@ If an abbreviation is missing, just add it to the [`snippets/abbreviations.md`](
 
 !!! warning "Only in production!"
 
-    The abbreviations will only render when you run `make build`, they do not show with `make dev`.
+    The abbreviations will only render when you run `mkdocs build`, they do not show with `mkdocs serve`.
 
 ## Customising Pages
 
