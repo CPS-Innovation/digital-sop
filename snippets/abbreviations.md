@@ -8,6 +8,8 @@
 *[CPS']: Crown Prosecution Services
 *[RBAC]: Role Based Access Control
 *[CNCF]: Cloud Native Computing Foundation
+*[TDA]: Technical Design Authority
+*[BAU]: Business as Usual
 
 <!-- https://geekflare.com/tech-abbreviations/ -->
 *[SQL]: Structured Query Language
