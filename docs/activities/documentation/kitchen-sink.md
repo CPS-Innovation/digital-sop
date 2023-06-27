@@ -5,14 +5,10 @@
 This template comes with a lot of built-in abbreviations. To use them just type an abbreviation, and it will be
 annotated.
 
-* WCAG
-* NaN
-* W3C
+WCAG is a standard for accessibility from the W3C WAI.
 
 ```markdown
-* WCAG
-* NaN
-* W3C
+WCAG is a standard for accessibility from the W3C WAI.
 ```
 
 If an abbreviation is missing, just add it to the [`snippets/abbreviations.md`](https://github.com/CPS-Innovation/digital-sop/blob/main/snippets/abbreviations.md?plain=1) file.
