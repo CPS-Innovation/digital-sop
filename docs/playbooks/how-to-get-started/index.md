@@ -27,29 +27,33 @@ A software audit is performed on the machines to help remind people when they fo
 
 ## What code repositories do I use, and how do I get access?
 
-CPS source code in GitLab repositories. Here's how you can gain access:
+As per the Technology COde of Practice we will "Publish ... code and use open source to improve transparency, flexibility and accountability". 
+The specific products are listed in the [starndards section](../../../docs/standards/archtecture/Accepted-Software/code-development.md). Currently this includes GitHub and GitLab.
 
-Sign up for a GitLab account if you don't have one.
+### Access to a GitHub repo: 
 
-Share your GitLab username with our GitLab admin, who will grant you access to the relevant CPS repositories.
+Sign up for [a free GitHub account](https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home) with your CPS email address.
 
-Please be mindful of the security guidelines and best practices when accessing and working with our code repositories.
+Share your GitHub username with our GitHub admin who will grant you access to the relevant CPS repositories.
+
+Ask the modern workplace team to add you to the AD group to allow authentication to the repo
+
+### Access to a GitLab repo:
+
+Soon CPS will be providing licences, in the meantime you can get a [free 30 day GitLab](https://gitlab.com/-/trial_registrations/new) trail. Once created ...
+Share your GitLab username with our GitLab admin who will grant you access to the relevant CPS repositories.
 
 
-## How do I get started with a new repo and pipeline
+## What are the current repos?
 
+Coming soon a link to the repos for Polaris, LowCode, Witex and Email Automation
 
 
 ## How do I get privileged access permissions today, and in the future
-Actually the model is different but fine, Modern Workplace  (Russ’s team) and SIAD Michael will ask them to write the model down.
 
-Today this is piece-meal and cumulative. We want to move to a model with standard role profiles and short-term elevations.
+Actually the model is different but fine, we will ask Modern Workplace and SIAD to explain why. However, today it can feel a little  piece-meal and cumulative. We want to move to a model with standard role profiles and short-term elevations.
 
-Today no distinction between Production AD and Non Production AD(Test and Development accounts). Everything is built upon one AD group.
 
-Just like we require an onboarding process, we also require an offboarding process - where access is revoked.
-
-A single identity that is used end-end rather than the now (user identity and admin identity that is used for giving access in Azure)
 
 ## What product provides Identity Management
 
