@@ -40,7 +40,7 @@ iterations and will generally have a start and end date.
 * How do we manage requirements
 * [CPS Digital Accessibility Services](https://cpsgovuk.sharepoint.com/hubs/hq/dts/Pages/MeetTheITATeam.aspx) at the momenet this is only accessible internally
 * How do I extend the architecture and design a solution
-* How do I test the solution
+* [How do I test the solution](../activities/test-resources/index.md)
 * How do we manage releases
 * How can I get assurance for a solution
 * How do we transition a solution into service
