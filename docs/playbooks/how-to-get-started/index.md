@@ -20,11 +20,8 @@ Please note that your admin account (e.g., username@CPSGOVUK.onmicrosoft.com) wi
 
 ## What development tools can I use?
 
-These are listed in the [starndards section](../../standards/architecture/development-standards.md)
+These are listed in the [starndards section](../../../docs/standards/archtecture/Accepted-Software/code-development.md)
 Required Software Tools
-Visual Studio 2022: Integrated Development Environment (IDE) for C# and .NET development.
-
-Visual Studio Code: A lightweight yet powerful code editor ideal for scripting, debugging, and more. You may opt to use this for development if you prefer.
 
 Ngrok: This utility helps expose local servers behind NATs and firewalls to the public internet via secure tunnels. It's useful for testing in development environment.
 
