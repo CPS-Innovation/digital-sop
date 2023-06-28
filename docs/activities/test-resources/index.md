@@ -2,14 +2,13 @@
 
 ## Test Environments
 There are a number of Test Instances available and the following table compares their features, the most accurate representation of the Production System are CIN4 and the Model office.
-![A table of test environments and their features](./CMS-environments.xlsx)
+[A table of test environments and their features](./CMS-environments.xlsx)
 
 ## How to get access to a test environment
 
 The process for getting access to them is the same.
 
-Navigate to the service request on CPS ServiceNow link below:
-https://cpsprod1.service-now.com/sp?id=sc_cat_item&sys_id=3371d4e01b074110abed0e1ad34bcb9b
+Navigate to the service request on [CPS ServiceNow Test Account Form](https://cpsprod1.service-now.com/sp?id=sc_cat_item&sys_id=3371d4e01b074110abed0e1ad34bcb9b)
 
 With regards to the Name field, add your name if it is for a personal user account. If it is for a system account, add the name you want.
 Add your Contact Number.
