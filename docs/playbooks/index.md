@@ -29,7 +29,7 @@ iterations and will generally have a start and end date.
 * How do I get privileged access permissions
 * How do I manage infrastructure resources e.g. create, update and delete
 
-## What patterns should I reuse
+## [What patterns should I reuse](./reusable-patterns/index.md)
 
 * How can I integrate with the CMS?
 * How do we monitor services
