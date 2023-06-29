@@ -62,6 +62,7 @@ Actually the model is different but fine, we will ask Modern Workplace and SIAD 
 Azure AD
 
 ## How do I manage infrastructure resources e.g. create, update and delete
+
 Today we are operating as multi-disciplinary teams with Cloud Platform Engineers embedded within the development teams.
 
 In the future we could move to a model where there are self-service templates for infrastructure and platform services commonly available to all application development teams
