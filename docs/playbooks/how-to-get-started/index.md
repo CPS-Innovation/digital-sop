@@ -27,7 +27,7 @@ A software audit is performed on the machines to help remind people when they fo
 
 ## What code repositories do I use, and how do I get access?
 
-As per the Technology COde of Practice we will "Publish ... code and use open source to improve transparency, flexibility and accountability". 
+As per the Technology Code of Practice we will "Publish ... code and use open source to improve transparency, flexibility and accountability". 
 The specific products are listed in the [starndards section](../../standards/archtecture/Accepted-Software/code-development.md). Currently this includes GitHub and GitLab.
 
 ### Access to a GitHub repo: 
