@@ -32,7 +32,9 @@ The specific products are listed in the [starndards section](../../standards/arc
 
 ### Access to a GitHub repo: 
 
-Sign up for [a free GitHub account](https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home) with your CPS email address.
+If you do not have a GitHub account, sign up for [a free account](https://github.com/signup) using your CPS email address.
+
+If you already have a GitHub account, be sure to [add your CPS email address to it](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/adding-an-email-address-to-your-github-account).
 
 Share your GitHub username with our GitHub admin who will grant you access to the relevant CPS repositories.
 
