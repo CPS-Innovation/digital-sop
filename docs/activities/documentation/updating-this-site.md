@@ -3,9 +3,10 @@
 To update or add new pages you will need the following:
 
 * A `@cps.gov.uk` email address.
-* A GitHub account with your `@cps.gov.uk` [email added](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/adding-an-email-address-to-your-github-account). 
+* A GitHub account with your `@cps.gov.uk` [email added](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/adding-an-email-address-to-your-github-account).
+* You have been added to the Azure AD group for this GitHub Organisation
 * An accepted invitation to the [CPS-Innovation](https://github.com/CPS-Innovation) GitHub organisation.
-* And then you need to be added to the Azure AD group
+* You have been given "write" access to the [CPS SOP Repository](https://github.com/CPS-Innovation/digital-sop).
 
 ## Editing existing pages
 
