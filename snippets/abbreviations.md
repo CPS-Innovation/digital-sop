@@ -10,6 +10,7 @@
 *[CNCF]: Cloud Native Computing Foundation
 *[TDA]: Technical Design Authority
 *[BAU]: Business as Usual
+*[SOP]: Standard Operating Procedures
 
 <!-- https://geekflare.com/tech-abbreviations/ -->
 *[SQL]: Structured Query Language
