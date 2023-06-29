@@ -8,6 +8,7 @@
 
 ## Checklist
 
+- [ ] This PR **does not** alter any page content.
 - [ ] This PR introduces a new page.
   - [ ] I have ensured that there are links from other pages to this new content.
 - [ ] This PR updates existing pages.
