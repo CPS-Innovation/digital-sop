@@ -13,5 +13,4 @@
   - [ ] I have ensured that there are links from other pages to this new content.
 - [ ] This PR updates existing pages.
 - [ ] I have previewed my changes using [StackEdit](https://stackedit.io/app), and they match my expectations.
-- [ ] I have checked that any abbreviations used match up with 
-      [built-in abbreviations](https://github.com/CPS-Innovation/digital-sop/tree/main/snippets/abbreviations.md).
+- [ ] I have checked that any abbreviations used match up with [built-in abbreviations](https://github.com/CPS-Innovation/digital-sop/tree/main/snippets/abbreviations.md).
