@@ -23,6 +23,7 @@ iterations and will generally have a start and end date.
 ## [How to get started as a Developer](./how-to-get-started/index.md)
 
 This Playbook covers: 
+
 * What are the CPS Development Principles
 * What environment do I use for development, and how do I get one?
 * What development tools can I use?
@@ -33,6 +34,7 @@ This Playbook covers:
 ## [What patterns should I reuse](./reusable-patterns/index.md)
 
 This Playbook covers:
+
 * How can I integrate with the CMS?
 * How do we monitor services
 * How do we manage secretes and certificates
