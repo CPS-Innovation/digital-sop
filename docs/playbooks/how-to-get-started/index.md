@@ -42,7 +42,12 @@ Ask the modern workplace team to add you to the Azure AD group to allow authenti
 
 ### Access to a GitLab repo:
 
-Soon CPS will be providing licences, in the meantime you can get a [free 30 day GitLab](https://gitlab.com/-/trial_registrations/new) trail. Once created ...
+Soon CPS will be providing Gitlab licences, in the meantime:
+
+If you do not have a GitLab account, sign up for a [free GitLab account](https://gitlab.com/users/sign_up).
+
+If you do have a GitLab account, be sure to add your CPS emaild address to it
+
 Share your GitLab username with our GitLab admin who will grant you access to the relevant CPS repositories.
 
 
