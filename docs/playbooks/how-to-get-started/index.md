@@ -38,7 +38,7 @@ If you already have a GitHub account, be sure to [add your CPS email address to 
 
 Share your GitHub username with our GitHub admin who will grant you access to the relevant CPS repositories.
 
-Ask the modern workplace team to add you to the AD group to allow authentication to the repo
+Ask the modern workplace team to add you to the Azure AD group to allow authentication to the repo
 
 ### Access to a GitLab repo:
 
