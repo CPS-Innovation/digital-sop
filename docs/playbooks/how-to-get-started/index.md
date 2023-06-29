@@ -20,14 +20,14 @@ Please note that your admin account (e.g., username@CPSGOVUK.onmicrosoft.com) wi
 
 ## What development tools can I use?
 
-These are listed in the [starndards section](../../standards/archtecture/Accepted-Software/code-development.md)
+These are listed in the [standards section](../../standards/archtecture/Accepted-Software/code-development.md)
 Required Software Tools
 
 A software audit is performed on the machines to help remind people when they forget to use the approved set of tools
 
 ## What code repositories do I use, and how do I get access?
 
-As per the Technology Code of Practice we will "Publish ... code and use open source to improve transparency, flexibility and accountability". 
+As per the [Technology Code of Practice](https://www.gov.uk/guidance/the-technology-code-of-practice#be-open-and-use-open-source) we will "Publish ... code and use open source to improve transparency, flexibility and accountability". 
 The specific products are listed in the [starndards section](../../standards/archtecture/Accepted-Software/code-development.md). Currently this includes GitHub and GitLab.
 
 ### Access to a GitHub repo: 
