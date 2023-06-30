@@ -95,8 +95,9 @@ extra:
         - icon: material/thumb-up-outline
           name: This page was helpful
           data: 1
-          note: Thanks for your feedback!
+          note: Help us improve this page by using our <a href="https://forms.office.com/e/XeFfnLUaF2" target="_blank" rel="noopener">feedback form</a>. Thanks for your feedback!
+
         - icon: material/thumb-down-outline
           name: This page could be improved
           data: 0
-          note: Thanks for your feedback!
+          note: Help us improve this page by using our <a href="https://forms.office.com/e/XeFfnLUaF2" target="_blank" rel="noopener">feedback form</a>. Thanks for your feedback!
