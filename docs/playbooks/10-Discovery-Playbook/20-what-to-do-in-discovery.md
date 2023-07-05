@@ -27,7 +27,7 @@ You’ll also need to learn enough about your users’ accessibility requirement
 space you’re looking at presents any particular challenges from an inclusion point of view.
 
 Bear in mind that, in the UK, 1 in 5 people report a permanent disability. And that accessibility covers a range of 
-other needs for people who do not have a disability.
+other needs for people who do not have a disability. It is vital to consider accessibility requirements from the outset.
 
 You’ll also need to think about things like your users’ digital skills and internet access.
 

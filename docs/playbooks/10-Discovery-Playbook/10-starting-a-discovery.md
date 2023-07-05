@@ -7,8 +7,7 @@ and work out when it’s finished.
 
 ## Define the problem
 
-At the start of your discovery, you might be presented with a pre-defined solution or told you’re building a specific 
-thing.
+At the start of your discovery, you might be presented with a pre-defined solution or you may be exploring a newly-identified user issue.
 
 Before you start your research, you’ll need to interrogate that solution and reframe it as a problem to be solved. This 
 will help you better understand what your team has been set up to achieve.
