@@ -15,7 +15,7 @@ iterations and will generally have a start and end date.
 
 [GDS Service Manual](https://www.gov.uk/service-manual){ .md-button }
 [Discovery](./10-Discovery-Playbook/index.md){ .md-button .md-button--primary }
-[Alpha](){ .md-button .md-button--disabled }
+[Alpha](./20-Alpha-Playbook/index.md){ .md-button .md-button--primary }
 [Beta](){ .md-button .md-button--disabled }
 [Live](){ .md-button .md-button--disabled }
 [Retirement](){ .md-button .md-button--disabled }
