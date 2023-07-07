@@ -1,5 +1,7 @@
 import json
 from os.path import abspath
+from pathlib import Path
+import re
 
 
 def slideshow(source, language, css_class, options, md, classes=None, id_value='', attrs=None, **kwargs):
@@ -8,7 +10,14 @@ def slideshow(source, language, css_class, options, md, classes=None, id_value='
 
         def load_svg(path):
             with open(abspath(path), 'r') as f:
-                return f.read()
+                filename = Path(path)
+                return fix_svg_ids(filename.stem, f.read())
+
+        def fix_svg_ids(filename, contents):
+            contents = contents.replace('id="', f'id="{filename}-')
+            contents = contents.replace('href="#', f'href="#{filename}-')
+            contents = contents.replace('url(#', f'"url(#{filename}-')
+            return contents
 
         slides = source.split("\n")
         loaded_slides = list(map(load_svg, slides))
