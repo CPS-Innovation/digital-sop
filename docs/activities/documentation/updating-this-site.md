@@ -53,7 +53,7 @@ You will need `python >= 3.11.4` installed to follow this guide.
 1. Clone the SOP repository `git clone https://github.com/CPS-Innovation/digital-sop.git`.
 2. Install requirements `pip install -r requirements.txt`.
 3. Create a new branch for you changes `git checkout -b <name-of-branch>`.
-4. And run the development server `mkdocs serve --config-file mkdocs.development.yml`.
+4. And run the development server `mkdocs serve`.
 5. You can now visit [http://localhost:8000](http://localhost:8000) to view your local copy.
 6. Make changes to or add any files you deem necessary, when you save your changes, the local website will refresh.
 7. Once you are happy with your changes, push them to GitHub `git push`.
