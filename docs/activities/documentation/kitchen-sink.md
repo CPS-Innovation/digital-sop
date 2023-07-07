@@ -67,6 +67,32 @@ title: Page Title
 ---
 ```
 
+## Slideshows
+
+To create a slide show, [export from PowerPoint in SVG format](https://office-watch.com/2022/save-image-slides-svg-format/#powerpoint-slides-to-svg)
+and upload the resulting folder (with no spaces in the folder or slide name) the same way you would any image.
+
+Once added to the folder structure, add the following code block to your page, noticing that the paths in the list are
+relative to the root of the repository.
+
+    ```slideshow
+    docs/activities/documentation/technical-approaches/Slide1.SVG
+    docs/activities/documentation/technical-approaches/Slide2.SVG
+    docs/activities/documentation/technical-approaches/Slide3.SVG
+    docs/activities/documentation/technical-approaches/Slide4.SVG
+    docs/activities/documentation/technical-approaches/Slide5.SVG
+    ```
+
+This will result in the following component.
+
+```slideshow
+docs/activities/documentation/technical-approaches/Slide1.SVG
+docs/activities/documentation/technical-approaches/Slide2.SVG
+docs/activities/documentation/technical-approaches/Slide3.SVG
+docs/activities/documentation/technical-approaches/Slide4.SVG
+docs/activities/documentation/technical-approaches/Slide5.SVG
+```
+
 ## Admonitions
 
 ### Main
