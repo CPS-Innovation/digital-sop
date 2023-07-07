@@ -11,6 +11,7 @@
 *[TDA]: Technical Design Authority
 *[BAU]: Business as Usual
 *[SOP]: Standard Operating Procedures
+*[CMS]: Case Management System
 
 <!-- https://geekflare.com/tech-abbreviations/ -->
 *[SQL]: Structured Query Language
@@ -247,7 +248,6 @@
 *[CPM]: Cost Per Thousand Impressions
 *[SVG]: Scalable Vector Graphics
 *[DMCA]: Digital Millennium Copyright Act
-*[CMS]: Content Management System
 *[CRO]: Conversion Rate Optimization
 *[CTA]: Call to Action
 *[CTR]: Click Through Rate
