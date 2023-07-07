@@ -14,7 +14,7 @@ To run a local copy of the documentation site you must have python >= 3.10 insta
 
 * Clone this repository `git clone https://github.com/CPS-Innovation/digital-sop.git`
 * Install requirements `pip install -r requirements.txt`
-* And run the development server `mkdocs serve --config-file mkdocs.development.yml`
+* And run the development server `mkdocs serve`
 
 ## Structure
 
