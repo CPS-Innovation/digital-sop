@@ -28,10 +28,12 @@ plugins:
 extra_css:
   - assets/stylesheets/theme.css
   - assets/stylesheets/diagrams.css
+  - assets/stylesheets/slideshow.css
 
 extra_javascript:
   - assets/javascripts/mathjax.js
   - assets/javascripts/diagrams.js
+  - assets/javascripts/slideshow.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
