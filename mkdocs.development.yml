@@ -53,6 +53,9 @@ markdown_extensions:
         - snippets/work-in-progress.md
   - pymdownx.superfences:
       custom_fences:
+        - name: slideshow
+          class: slideshow
+          format: !!python/name:custom.formatter.slideshow
         - name: diagram-plantuml
           class: diagram-plantuml
         - name: mermaid
