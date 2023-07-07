@@ -1,2 +1,4 @@
+custom/build
+custom/*.egg-info/
 site/
 venv/
