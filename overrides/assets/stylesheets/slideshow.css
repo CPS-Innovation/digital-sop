@@ -9,7 +9,7 @@
     height: 2rem;
     width: 2rem;
     bottom: 1rem;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(255, 255, 255, 0.6);
     background-repeat: no-repeat;
     background-size: 1rem;
     background-position: center;
@@ -19,6 +19,16 @@
 
 .slide-deck .control.disabled {
     display: none;
+}
+
+.slide-deck .control.position {
+    left: 45%;
+    border-radius: 0.3rem;
+    text-align: center;
+    height: 1.2rem;
+    width: 5rem;
+    bottom: 1.4rem;
+    font-weight: bolder;
 }
 
 .slide-deck .control.left {
@@ -40,6 +50,5 @@
 }
 
 .slide-deck .slide svg {
-    overflow: visible;
     vertical-align: middle;
 }

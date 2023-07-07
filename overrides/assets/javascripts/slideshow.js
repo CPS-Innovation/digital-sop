@@ -4,17 +4,6 @@ document$.subscribe(function () {
 
 const renderSlides = () => {
   document.querySelectorAll('.slide-deck').forEach(deck => {
-    const controlLeft = document.createElement('div');
-    controlLeft.classList.add('control');
-    controlLeft.classList.add('left');
-
-    const controlRight = document.createElement('div');
-    controlRight.classList.add('control');
-    controlRight.classList.add('right');
-
-    deck.appendChild(controlLeft);
-    deck.appendChild(controlRight);
-
     const slides = deck.querySelectorAll('.slide svg');
 
     slides.forEach(el => {
@@ -23,6 +12,28 @@ const renderSlides = () => {
     });
 
     let slideIndex = 0;
+
+    const controlLeft = document.createElement('div');
+    controlLeft.classList.add('control');
+    controlLeft.classList.add('left');
+    controlLeft.ariaLabel = 'Previous Slide';
+    controlLeft.setAttribute('aria-role', 'button');
+
+    const controlRight = document.createElement('div');
+    controlRight.classList.add('control');
+    controlRight.classList.add('right');
+    controlRight.ariaLabel = 'Next Slide';
+    controlRight.setAttribute('aria-role', 'button');
+
+    const controlSlideNumbers = document.createElement('div');
+    controlSlideNumbers.classList.add('control');
+    controlSlideNumbers.classList.add('position');
+    controlSlideNumbers.ariaLabel = 'Slide Position';
+    controlSlideNumbers.innerText = `${slideIndex + 1} / ${slides.length}`;
+
+    deck.appendChild(controlLeft);
+    deck.appendChild(controlRight);
+    deck.appendChild(controlSlideNumbers);
 
     slides.item(slideIndex).parentNode.classList.add('active');
     controlLeft.classList.add('disabled');
@@ -39,6 +50,7 @@ const renderSlides = () => {
       } else {
         controlLeft.classList.remove('disabled');
       }
+      controlSlideNumbers.innerText = `${slideIndex + 1} / ${slides.length}`;
     };
 
     controlRight.onclick = () => {
@@ -53,6 +65,7 @@ const renderSlides = () => {
       } else {
         controlRight.classList.remove('disabled');
       }
+      controlSlideNumbers.innerText = `${slideIndex + 1} / ${slides.length}`;
     };
   });
 };
