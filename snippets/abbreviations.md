@@ -13,6 +13,10 @@
 *[SOP]: Standard Operating Procedures
 *[CMS]: Case Management System
 
+*[WCAG]: Web Content Accessibility Guidelines
+*[W3C]: World Wide Web Consortium
+*[WAI]: Web Accessibility Initiative
+
 <!-- https://geekflare.com/tech-abbreviations/ -->
 *[SQL]: Structured Query Language
 *[DQL]: Data Query Language
