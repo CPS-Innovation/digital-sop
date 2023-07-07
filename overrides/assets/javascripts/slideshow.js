@@ -16,15 +16,19 @@ const renderSlides = () => {
     const controlLeft = document.createElement('div');
     controlLeft.classList.add('control');
     controlLeft.classList.add('left');
+    controlLeft.ariaLabel = 'Previous Slide';
+    controlLeft.setAttribute('aria-role', 'button');
 
     const controlRight = document.createElement('div');
     controlRight.classList.add('control');
     controlRight.classList.add('right');
+    controlRight.ariaLabel = 'Next Slide';
+    controlRight.setAttribute('aria-role', 'button');
 
     const controlSlideNumbers = document.createElement('div');
     controlSlideNumbers.classList.add('control');
     controlSlideNumbers.classList.add('position');
-
+    controlSlideNumbers.ariaLabel = 'Slide Position';
     controlSlideNumbers.innerText = `${slideIndex + 1} / ${slides.length}`;
 
     deck.appendChild(controlLeft);
