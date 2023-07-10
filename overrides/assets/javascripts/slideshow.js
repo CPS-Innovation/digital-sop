@@ -17,13 +17,11 @@ const renderSlides = () => {
     controlLeft.classList.add('control');
     controlLeft.classList.add('left');
     controlLeft.ariaLabel = 'Previous Slide';
-    controlLeft.setAttribute('aria-role', 'button');
 
     const controlRight = document.createElement('button');
     controlRight.classList.add('control');
     controlRight.classList.add('right');
     controlRight.ariaLabel = 'Next Slide';
-    controlRight.setAttribute('aria-role', 'button');
 
     const controlSlideNumbers = document.createElement('div');
     controlSlideNumbers.classList.add('control');
