@@ -12,10 +12,10 @@
     {% set toc = first.children %}
   {% endif %}
   {% if toc %}
-    <label class="md-nav__title" for="__toc">
+    <span class="md-nav__title">
       <span class="md-nav__icon md-icon"></span>
       {{ title }}
-    </label>
+    </span>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       {% for toc_item in toc %}
         {% include "partials/toc-item.html" %}
