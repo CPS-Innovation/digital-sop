@@ -80,11 +80,11 @@ blockquote:before {
 
 .md-tabs__link {
     font-weight: 500;
-    color: #fff !important;
+    color: var(--md-primary-bg-color) !important;
     opacity: 1;
 }
 .md-tabs__link.md-tabs__link--active {
     font-weight: 800;
-    color: #fff !important;
+    color: var(--md-primary-bg-color) !important;
     opacity: 1;
 }
