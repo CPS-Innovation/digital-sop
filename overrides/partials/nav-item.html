@@ -46,7 +46,7 @@
       {% if not indexes %}
         <label
           class="md-nav__link"
-          for="{{ path }}"
+          for="{{ path }}_h"
           id="{{ path }}_label"
           tabindex="0"
         >
@@ -61,7 +61,7 @@
           <a href="{{ index.url | url }}">{{ index.title }}</a>
 
           {% if nav_item.children %}
-            <label for="{{ path }}">
+            <label for="{{ path }}_h">
               <span style="display: none">Expand</span>
               <span class="md-nav__icon md-icon"></span>
             </label>
@@ -104,10 +104,10 @@
         <input
           class="md-nav__toggle md-toggle"
           type="checkbox"
-          id="__toc"
+          id="__toc_{{ nav_item.path }}"
           aria-disabled="true"
         />
-        <label class="md-nav__link md-nav__link--active" for="__toc">
+        <label class="md-nav__link md-nav__link--active" for="__toc_{{ nav_item.path }}">
           {{ nav_item.title }}
           <span class="md-nav__icon md-icon"></span>
         </label>
