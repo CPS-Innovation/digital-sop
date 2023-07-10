@@ -1,7 +1,5 @@
-import json
 from os.path import abspath
 from pathlib import Path
-import re
 
 
 def slideshow(source, language, css_class, options, md, classes=None, id_value='', attrs=None, **kwargs):
