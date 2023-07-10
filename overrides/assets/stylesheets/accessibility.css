@@ -1,0 +1,32 @@
+.accessibility {
+    margin-left: auto;
+    margin-right: auto;
+    width: 61rem;
+    max-width: 100%;
+    display: flex;
+    padding: 5px 20px;
+}
+
+.accessibility .text-size * {
+    padding-right: 0.6rem;
+}
+
+.accessibility .text-size span {
+    font-size: 1rem;
+}
+
+.accessibility .text-size button {
+    cursor: pointer;
+}
+
+.accessibility .text-size .normal {
+    font-size: 0.8rem;
+}
+
+.accessibility .text-size .big {
+    font-size: 1rem;
+}
+
+.accessibility .text-size .bigger {
+    font-size: 1.2rem;
+}

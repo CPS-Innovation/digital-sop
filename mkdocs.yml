@@ -29,11 +29,13 @@ plugins:
 extra_css:
   - assets/stylesheets/main.min.css
   - assets/stylesheets/theme.css
+  - assets/stylesheets/accessibility.css
   - assets/stylesheets/diagrams.css
   - assets/stylesheets/slideshow.css
 
 extra_javascript:
   - assets/javascripts/bundle.min.js
+  - assets/javascripts/accessibility.js
   - assets/javascripts/mathjax.js
   - assets/javascripts/diagrams.js
   - assets/javascripts/slideshow.js
