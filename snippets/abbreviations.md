@@ -12,6 +12,7 @@
 *[BAU]: Business as Usual
 *[SOP]: Standard Operating Procedures
 *[CMS]: Case Management System
+*[DID]: Digital and Information Directorate
 
 *[WCAG]: Web Content Accessibility Guidelines
 *[W3C]: World Wide Web Consortium
