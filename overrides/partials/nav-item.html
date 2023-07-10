@@ -75,10 +75,6 @@
         aria-label="{{ nav_item.title }}"
         aria-expanded="{{ nav_item.active | tojson }}"
       >
-        <label class="md-nav__title" for="{{ path }}">
-          <span class="md-nav__icon md-icon"></span>
-          {{ nav_item.title }}
-        </label>
         <ul class="md-nav__list" data-md-scrollfix>
 
           {% for nav_item in nav_item.children %}
@@ -100,28 +96,12 @@
         {% set toc = first.children %}
       {% endif %}
 
-      {% if toc %}
-        <input
-          class="md-nav__toggle md-toggle"
-          type="checkbox"
-          id="__toc_{{ nav_item.path }}"
-          aria-disabled="true"
-        />
-        <label class="md-nav__link md-nav__link--active" for="__toc_{{ nav_item.path }}">
-          {{ nav_item.title }}
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      {% endif %}
       <a
         href="{{ nav_item.url | url }}"
         class="md-nav__link md-nav__link--active"
       >
         {{ nav_item.title }}
       </a>
-
-      {% if toc %}
-        {% include "partials/toc.html" %}
-      {% endif %}
     </li>
 
   {% else %}
