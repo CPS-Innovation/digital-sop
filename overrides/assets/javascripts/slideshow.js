@@ -13,13 +13,13 @@ const renderSlides = () => {
 
     let slideIndex = 0;
 
-    const controlLeft = document.createElement('div');
+    const controlLeft = document.createElement('button');
     controlLeft.classList.add('control');
     controlLeft.classList.add('left');
     controlLeft.ariaLabel = 'Previous Slide';
     controlLeft.setAttribute('aria-role', 'button');
 
-    const controlRight = document.createElement('div');
+    const controlRight = document.createElement('button');
     controlRight.classList.add('control');
     controlRight.classList.add('right');
     controlRight.ariaLabel = 'Next Slide';
