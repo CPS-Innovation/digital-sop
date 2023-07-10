@@ -74,6 +74,7 @@
     {% endif %}
     {% if "material/search" in config.plugins %}
       <label class="md-header__button md-icon" for="__search">
+        <span style="display: none">Search</span>
         {% include ".icons/material/magnify.svg" %}
       </label>
       {% include "partials/search.html" %}
