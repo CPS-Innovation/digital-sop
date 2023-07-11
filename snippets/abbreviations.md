@@ -12,6 +12,7 @@
 *[BAU]: Business as Usual
 *[SOP]: Standard Operating Procedures
 *[CMS]: Case Management System
+*[CIN]: **C**MS **IN**tegration
 
 *[WCAG]: Web Content Accessibility Guidelines
 *[W3C]: World Wide Web Consortium
