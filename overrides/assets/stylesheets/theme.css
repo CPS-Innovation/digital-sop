@@ -88,3 +88,11 @@ blockquote:before {
     color: var(--md-primary-bg-color) !important;
     opacity: 1;
 }
+
+.md-header {
+    position: inherit !important;
+}
+
+.md-sidebar {
+    top: 0 !important;
+}
