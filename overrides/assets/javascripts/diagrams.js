@@ -44,6 +44,8 @@ function injectDiagrams(diagrams) {
 
     const element = document.createElement('div');
     let zoomed = false;
+    let zoomedDimensions = {};
+
     element.innerHTML = diagram.svg;
     element.appendChild(controls);
     element.classList.add('diagram-render');
@@ -105,6 +107,9 @@ function injectDiagrams(diagrams) {
         viewBox.height = defaultSettings.viewBox.height * pageZoom;
         viewBox.x = (viewBox.width / pageZoom) * zoomFactor;
         viewBox.y = defaultSettings.viewBox.y;
+
+        zoomedDimensions.width = viewBox.width * 2;
+        zoomedDimensions.height = viewBox.height * 2;
       }
     };
 
@@ -117,11 +122,13 @@ function injectDiagrams(diagrams) {
       if (!zoomed) return;
 
       let zoomIn = (ev.wheelDelta || ev.deltaY || ev.detail || 0) > 0;
-      point.x = ev.clientX;
-      point.y = ev.clientY;
-
       let startingPoint = point.matrixTransform(svg.getScreenCTM().inverse());
       let scaleDelta = zoomIn ? 1 / 1.6 : 1.6;
+      if (zoomedDimensions.width < (viewBox.width * scaleDelta)) return;
+      if (zoomedDimensions.height < (viewBox.height * scaleDelta)) return;
+
+      point.x = ev.clientX;
+      point.y = ev.clientY;
 
       viewBox.x -= (startingPoint.x - viewBox.x) * (scaleDelta - 1);
       viewBox.y -= (startingPoint.y - viewBox.y) * (scaleDelta - 1);
