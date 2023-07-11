@@ -95,6 +95,16 @@ function injectDiagrams(diagrams) {
         zoomed = true;
         element.classList.add('diagram-zoom-modal');
         document.documentElement.classList.add('hide-scrollbars');
+        const pageZoom = parseFloat(document.querySelector('html').style.zoom || '1.0');
+        let zoomFactor = 0;
+
+        if (pageZoom === 1.3) zoomFactor = 0.25;
+        if (pageZoom === 1.6) zoomFactor = 0.5;
+
+        viewBox.width = defaultSettings.viewBox.width * pageZoom;
+        viewBox.height = defaultSettings.viewBox.height * pageZoom;
+        viewBox.x = (viewBox.width / pageZoom) * zoomFactor;
+        viewBox.y = defaultSettings.viewBox.y;
       }
     };
 
