@@ -16,6 +16,8 @@
 *[CIN2]: Case management system Integration environment two
 *[CIN3]: Case management system Integration environment three
 *[CIN4]: Case management system Integration environment four
+*[DID]: Digital and Information Directorate
+
 
 *[WCAG]: Web Content Accessibility Guidelines
 *[W3C]: World Wide Web Consortium
