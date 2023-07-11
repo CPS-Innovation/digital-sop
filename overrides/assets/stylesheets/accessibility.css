@@ -100,6 +100,10 @@ html.theme-yellow-on-black .slide-deck .control {
     filter: invert(1);
 }
 
+html.theme-yellow-on-black .slide-deck .control.left, html.theme-yellow-on-black .slide-deck .control.right {
+     filter: invert(1) sepia(1) saturate(10) !important;
+}
+
 html.theme-yellow-on-black .slide-deck .control.position {
     filter: invert(0);
     background-color: rgba(0, 0, 0, 0.6);
