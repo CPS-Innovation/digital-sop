@@ -71,3 +71,28 @@ html.theme-greyscale {
 html.theme-yellow-on-black {
     filter: invert(1) sepia(1) saturate(2.5) hue-rotate(8deg);
 }
+
+html.theme-yellow-on-black [data-md-toggle=search]:checked ~ .md-header .md-search__overlay {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+html.theme-yellow-on-black [data-md-toggle=search]:checked ~ .md-header .md-search__output {
+    box-shadow: var(--md-shadow-z1);
+    opacity: 1;
+}
+
+html.theme-yellow-on-black .focus-visible,
+html.theme-yellow-on-black .md-search-result__link:focus,
+html.theme-yellow-on-black .md-search-result__link:hover,
+html.theme-yellow-on-black .md-search-result__more:focus,
+html.theme-yellow-on-black .md-search-result__more:hover,
+html.theme-yellow-on-black .focus-visible *,
+html.theme-yellow-on-black .md-search-result__link:focus *,
+html.theme-yellow-on-black .md-search-result__link:hover *,
+html.theme-yellow-on-black .md-search-result__more:focus *,
+html.theme-yellow-on-black .md-search-result__more:hover *,
+html.theme-yellow-on-black .md-search-result__more > summary:focus > div,
+html.theme-yellow-on-black .md-search-result__more > summary:hover > div {
+    background-color: #0027ffc7;
+    color: white;
+}
