@@ -1,8 +1,10 @@
-from os.path import abspath
+import logging
+from os.path import abspath, relpath
 from pathlib import Path
 
 
 def slideshow(source, language, css_class, options, md, classes=None, id_value='', attrs=None, **kwargs):
+    _ignored = [language, css_class, options, md, classes, id_value, attrs, kwargs]
     try:
         output = ""
 
@@ -25,7 +27,21 @@ def slideshow(source, language, css_class, options, md, classes=None, id_value='
         for index, slide in enumerate(loaded_slides):
             output += f'<div class="slide slide-{index}">{slide}</div>'
 
-        return f'<div class="slide-deck">{output}<div class="controls"></div></div>'
+        return f'<div class="slide-deck">{output}</div>'
     except BaseException as error:
-        print(error)
-        return 'Could not render slideshow!'
+        message = f'Something went wrong: {error}'
+
+        if hasattr(error, 'filename'):
+            message = f'{relpath(error.filename)} does not exist'
+
+        raise_warning(message)
+
+        return f'<div class="admonition danger">' \
+               f'<p class="admonition-title">Error: {message}</p>' \
+               f'<p><pre><code>{source}</code></pre></p>' \
+               f'</div>'
+
+
+def raise_warning(message):
+    logger = logging.getLogger("mkdocs.plugins")
+    logger.warning(f'[custom.formatter.slideshow] {message}')
