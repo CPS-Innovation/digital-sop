@@ -113,6 +113,15 @@ html.theme-yellow-on-black .admonition {
     border-color: var(--md-default-fg-color--light) !important;
 }
 
+html.theme-yellow-on-black blockquote::before {
+    color: var(--md-default-fg-color--lighter);
+}
+
+html.theme-yellow-on-black blockquote p {
+    font-weight: bold;
+    color: var(--md-primary-fg-color--light);
+}
+
 html.theme-yellow-on-black button {
     color: var(--md-accent-fg-color);
 }
