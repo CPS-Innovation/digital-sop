@@ -64,10 +64,10 @@
     min-height: 500px !important;
 }
 
-:root.theme-greyscale {
+html.theme-greyscale {
     filter: grayscale(100%);
 }
 
-:root.theme-yellow-on-black {
+html.theme-yellow-on-black {
     filter: grayscale(80%) invert(1) sepia(1) saturate(2.5) hue-rotate(11deg);
 }
