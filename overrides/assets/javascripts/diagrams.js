@@ -124,8 +124,12 @@ function injectDiagrams(diagrams) {
       let zoomIn = (ev.wheelDelta || ev.deltaY || ev.detail || 0) > 0;
       let startingPoint = point.matrixTransform(svg.getScreenCTM().inverse());
       let scaleDelta = zoomIn ? 1 / 1.6 : 1.6;
-      if (zoomedDimensions.width < (viewBox.width * scaleDelta)) return;
-      if (zoomedDimensions.height < (viewBox.height * scaleDelta)) return;
+      if (
+          zoomedDimensions.width < (viewBox.width * scaleDelta) ||
+          zoomedDimensions.height < (viewBox.height * scaleDelta) ||
+          zoomedDimensions.width / 6 > (viewBox.width * scaleDelta) ||
+          zoomedDimensions.height / 6 > (viewBox.height * scaleDelta)
+      ) return;
 
       point.x = ev.clientX;
       point.y = ev.clientY;
