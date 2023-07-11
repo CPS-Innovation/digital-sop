@@ -96,3 +96,7 @@ blockquote:before {
 .md-sidebar {
     top: 0 !important;
 }
+
+.md-top.md-icon {
+    top: 15px !important;
+}
