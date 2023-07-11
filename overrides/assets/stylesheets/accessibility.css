@@ -68,8 +68,7 @@
     filter: grayscale(100%);
 }
 
-/*html.theme-yellow-on-black .admonition,*/
-html.theme-yellow-on-black img {
+html.theme-yellow-on-black img, html.theme-yellow-on-black .admonition-title::before {
     filter: grayscale(78%) invert(0.5) sepia(1) hue-rotate(21deg) brightness(1.4) saturate(4.5);
 }
 
@@ -104,6 +103,10 @@ html.theme-yellow-on-black .slide-deck .control {
 html.theme-yellow-on-black .slide-deck .control.position {
     filter: invert(0);
     background-color: rgba(0, 0, 0, 0.6);
+}
+
+html.theme-yellow-on-black .admonition {
+    border-color: var(--md-default-fg-color--light) !important;
 }
 
 html.theme-yellow-on-black button {
