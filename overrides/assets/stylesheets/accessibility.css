@@ -186,9 +186,9 @@ html.theme-yellow-on-black .md-button.md-button--disabled {
     --md-typeset-mark-color: #ffff0080;
     --md-typeset-del-color: #f5503d26;
     --md-typeset-ins-color: #0bd57026;
-    --md-typeset-kbd-color: #fafafa;
-    --md-typeset-kbd-accent-color: #fff;
-    --md-typeset-kbd-border-color: #b8b8b8;
+    --md-typeset-kbd-color: var(--md-code-bg-color);
+    --md-typeset-kbd-accent-color: var(--md-code-bg-color);
+    --md-typeset-kbd-border-color: var(--md-code-fg-color);
     --md-typeset-table-color: #0000001f;
     --md-typeset-table-color--light: rgba(0, 0, 0, .035);
     --md-admonition-fg-color: var(--md-default-fg-color);
