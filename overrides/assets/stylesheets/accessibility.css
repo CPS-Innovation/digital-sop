@@ -69,5 +69,5 @@ html.theme-greyscale {
 }
 
 html.theme-yellow-on-black {
-    filter: grayscale(80%) invert(1) sepia(1) saturate(2.5) hue-rotate(11deg);
+    filter: invert(1) sepia(1) saturate(2.5) hue-rotate(8deg);
 }
