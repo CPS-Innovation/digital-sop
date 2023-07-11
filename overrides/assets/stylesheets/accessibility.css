@@ -65,7 +65,7 @@
 }
 
 html.theme-greyscale {
-    filter: grayscale(100%);
+    filter: saturate(2.5) grayscale(100%);
 }
 
 html.theme-yellow-on-black {
