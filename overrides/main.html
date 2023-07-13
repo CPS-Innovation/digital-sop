@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block announce %}
+{% if "announce.prototype" in features %}
+<h2>
+    <span class="twemoji" style="color: rgb(240, 157, 48)">{% include ".icons/material/alert.svg" %}</span>
+    Not a final product!
+    <small>
+        This is a prototype site demonstrating <abbr title="Crown Prosecution Service">CPS's</abbr> commitment to modern
+        development practices.
+    </small>
+</h2>
+{% endif %}
+{% endblock %}

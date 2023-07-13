@@ -9,6 +9,8 @@ theme:
   logo: assets/images/logo.svg
   logo_alt: Logo of the Crown Prosecution Service
   features:
+    - announce.dismiss
+    - announce.prototype
     - content.action.edit
     - navigation.instant
     - navigation.tabs
