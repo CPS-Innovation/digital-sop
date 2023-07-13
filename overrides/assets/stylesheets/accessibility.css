@@ -64,6 +64,12 @@
     min-height: 500px !important;
 }
 
+.md-consent__inner {
+    position: relative;
+    bottom: unset;
+    animation: unset;
+}
+
 html.theme-greyscale {
     filter: saturate(2.5) grayscale(100%);
 }
