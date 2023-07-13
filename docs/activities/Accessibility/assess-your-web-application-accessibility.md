@@ -1,4 +1,4 @@
-# Web Accessibility Checklist
+# Assessing Web Accessibility
 
 All websites, web applications and digital products must achieve WCAG 2.1 AA standards in order to meet CPS Policy,
 Governmental accessibility and Legislative requirements.
