@@ -7,7 +7,7 @@
     display: flex;
     padding: 5px 20px;
     flex-wrap: wrap;
-    flex-direction: row-reverse;
+    justify-content: flex-end;
 }
 
 .accessibility div {
