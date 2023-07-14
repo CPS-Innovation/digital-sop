@@ -32,6 +32,12 @@
             calc(var(--theme-main-colour-lightness) * 0.9),
             var(--theme-main-colour-alpha)
     );
+
+    --md-footer-fg-color: #000;
+    --md-footer-fg-color--light: #000000b3;
+    --md-footer-fg-color--lighter: #00000073;
+    --md-footer-bg-color: #fff;
+    --md-footer-bg-color--dark: rgba(0, 0, 0, 0.05);
 }
 
 .md-header__button.md-logo img, .md-header__button.md-logo svg {
