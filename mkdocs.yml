@@ -17,6 +17,7 @@ theme:
     - navigation.top
     - navigation.tracking
     - navigation.indexes
+    - toc.integrate
 
 plugins:
   - git-revision-date-localized:

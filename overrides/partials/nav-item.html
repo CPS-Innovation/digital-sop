@@ -102,6 +102,10 @@
       >
         {{ nav_item.title }}
       </a>
+
+      {% if toc and "toc.integrate" in features %}
+        {% include "partials/toc.html" %}
+      {% endif %}
     </li>
 
   {% else %}
