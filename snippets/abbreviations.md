@@ -17,6 +17,8 @@
 *[WCAG]: Web Content Accessibility Guidelines
 *[W3C]: World Wide Web Consortium
 *[WAI]: Web Accessibility Initiative
+*[HQ]: Headquarters
+*[GDS]: Government Digital Service
 
 <!-- https://geekflare.com/tech-abbreviations/ -->
 *[SQL]: Structured Query Language
