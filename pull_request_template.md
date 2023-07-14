@@ -14,3 +14,9 @@
 - [ ] This PR updates existing pages.
 - [ ] I have previewed my changes using [StackEdit](https://stackedit.io/app), and they match my expectations.
 - [ ] I have checked that any abbreviations used match up with [built-in abbreviations](https://github.com/CPS-Innovation/digital-sop/tree/main/snippets/abbreviations.md).
+- Accessibility
+  - Multimedia
+    - [ ] I have added an embedded image and ensured that there is alt text present
+    - [ ] I have added an embedded audio clip and ensured that a transcript is included
+    - [ ] I have added an embedded video and ensured that a transcript is included
+    - [ ] I have added an embedded video and ensured that a sign language version is included
