@@ -13,9 +13,9 @@ To update or add new pages you will need the following:
 To edit the content of an existing page
 
 1. Navigate to the page you wish to edit.
-2. Click the :material-file-edit-outline: icon in the upper right of the page.
+2. Click the :material-file-edit-outline: Edit this page icon.
 3. Make changes to the page, for guidance on formatting see the [Markdown Guide](https://www.markdownguide.org/cheat-sheet/).
-4. Once you have made your alterations, click "Commit changes..." in the upper right. 
+4. Once you have made your alterations, click "Commit changes...". 
 5. In the following dialog, describe your changes, select "Create a new branch" and give it an appropriate name.
 6. Once you are happy click "Propose changes" and your changes will be ready for review.
 
@@ -28,7 +28,7 @@ reflect on the live website.
 To create a new page, visit the [GitHub repository](https://github.com/CPS-Innovation/digital-sop/tree/main/docs) and
 navigate to the folder where you wish to create the new page. 
 
-1. Click "Add file" in the upper right.
+1. Click "Add file".
 2. Click "Create new file" in the menu that appears.
 3. Give your new file a name, ensuring it follows the formatting standards.
     * All lower case.
@@ -36,7 +36,7 @@ navigate to the folder where you wish to create the new page.
     * Ends with `.md`.
     * E.g. `my-new-doc.md`.
 4. Add content to the new file, for guidance on formatting see the [Markdown Guide](https://www.markdownguide.org/cheat-sheet/).
-5. Once you have made your alterations, click "Commit changes..." in the upper right. 
+5. Once you have made your alterations, click "Commit changes...". 
 6. In the following dialog, describe your changes, select "Create a new branch" and give it an appropriate name.
 7. Once you are happy click "Propose changes" and your changes will be ready for review.
 
