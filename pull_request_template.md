@@ -18,8 +18,11 @@
   - Instructional
     - [ ] I have added content that tells a user how to complete a task without telling them to click a button based on 
           its shape or similar visual direction.
+  - Text
+    - [ ] Page headings are not duplicated on the same page.
   - Images
     - [ ] Embedded images have alt text present.
+    - [ ] Embedded images that include text have that text included in the alt text.
     - [ ] Embedded images have a contrast ratio of at least 4.5:1.
     - [ ] Embedded images have content that cannot be presented in text alone.
   - Audio
