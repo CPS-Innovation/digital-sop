@@ -88,20 +88,26 @@ function injectDiagrams(diagrams) {
       return false;
     }
 
+    function close() {
+      zoomed = false;
+      element.classList.remove('diagram-zoom-modal');
+      reset();
+      document.documentElement.classList.remove('hide-scrollbars');
+      document.querySelector('html').onkeyup = undefined;
+      return false;
+    }
+
     controls
       .getElementsByClassName('controls-close')
       .item(0)
-      .onclick =
-            function () {
-              zoomed = false;
-              element.classList.remove('diagram-zoom-modal');
-              reset();
-              document.documentElement.classList.remove('hide-scrollbars');
-              return false;
-            };
+      .onclick = close;
+
 
     svg.onclick = function () {
       if (!zoomed) {
+        document.querySelector('html').onkeyup = (ev) => {
+          if (ev.key === "Escape") close();
+        };
         zoomed = true;
         element.classList.add('diagram-zoom-modal');
         document.documentElement.classList.add('hide-scrollbars');
