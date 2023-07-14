@@ -93,6 +93,17 @@ docs/activities/documentation/technical-approaches/Slide4.SVG
 docs/activities/documentation/technical-approaches/Slide5.SVG
 ```
 
+## Images
+
+You can embed uploaded images as follows. In order to ensure the accessibility of images, you **must** include 
+alternative text describing the image.
+
+![An espresso cup on its side with coffee beans spilling from it in the shape of a river.](./coffee_171653.jpg)
+
+```markdown
+![An espresso cup on its side with coffee beans spilling from it in the shape of a river.](./coffee_171653.jpg)
+```
+
 ## Admonitions
 
 ### Main
@@ -236,10 +247,10 @@ docs/activities/documentation/technical-approaches/Slide5.SVG
 
 ### Internal Link
 
-[Discovery](../../playbooks/10-Discovery-Playbook/index.md){ .md-button .md-button--primary }
+[Discovery](../../playbooks/Lifecycle/10-Discovery-Playbook/index.md){ .md-button .md-button--primary }
 
 ```markdown
-[Discovery](../../playbooks/10-Discovery-Playbook/index.md){ .md-button .md-button--primary }
+[Discovery](../../playbooks/Lifecycle/10-Discovery-Playbook/index.md){ .md-button .md-button--primary }
 ```
 
 ### Disabled Link

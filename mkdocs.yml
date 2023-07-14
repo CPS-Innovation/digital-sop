@@ -9,8 +9,9 @@ theme:
   logo: assets/images/logo.svg
   logo_alt: Logo of the Crown Prosecution Service
   features:
+    - announce.dismiss
+    - announce.prototype
     - content.action.edit
-    - navigation.instant
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.top
@@ -69,6 +70,8 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tasklist:
+      clickable_checkbox: true
   - toc:
       permalink: true
       title: On this page
