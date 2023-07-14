@@ -18,8 +18,13 @@
   - Instructional
     - [ ] I have added content that tells a user how to complete a task without telling them to click a button based on 
           its shape or similar visual direction.
-  - Multimedia
-    - [ ] I have added an embedded image and ensured that there is alt text present
-    - [ ] I have added an embedded audio clip and ensured that a transcript is included
-    - [ ] I have added an embedded video and ensured that a transcript is included
-    - [ ] I have added an embedded video and ensured that a sign language version is included
+  - Images
+    - [ ] Embedded images have alt text present.
+    - [ ] Embedded images have a contrast ratio of at least 4.5:1.
+    - [ ] Embedded images have content that cannot be presented in text alone.
+  - Audio
+    - [ ] Embedded audio clips have a transcript included.
+  - Video
+    - [ ] Embedded videos have a transcript included.
+    - [ ] Embedded videos have synchronised subtitles / closed captions included.
+    - [ ] Embedded audio clips have sign language version included where audio exists.
