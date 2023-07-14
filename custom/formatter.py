@@ -18,7 +18,7 @@ def slideshow(source, language, css_class, options, md, classes=None, id_value='
 
             contents = contents.replace('id="', f'id="{prefix}')
             contents = contents.replace('href="#', f'href="#{prefix}')
-            contents = contents.replace('url(#', f'"url(#{prefix}')
+            contents = contents.replace('url(#', f'url(#{prefix}')
             return contents
 
         slides = source.split("\n")
