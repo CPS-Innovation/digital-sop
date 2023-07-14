@@ -97,12 +97,14 @@ blockquote:before {
     opacity: 1;
 }
 
-.md-header {
-    position: inherit !important;
-}
+@media screen and (min-width: 76.1875em) {
+    .md-header {
+        position: inherit !important;
+    }
 
-.md-sidebar {
-    top: 0 !important;
+    .md-sidebar {
+        top: 0 !important;
+    }
 }
 
 .md-top.md-icon {
