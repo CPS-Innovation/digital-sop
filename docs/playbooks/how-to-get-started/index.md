@@ -28,7 +28,7 @@ A software audit is performed on the machines to help remind people when they fo
 ## What code repositories do I use, and how do I get access?
 
 As per the [Technology Code of Practice](https://www.gov.uk/guidance/the-technology-code-of-practice#be-open-and-use-open-source) we will "Publish ... code and use open source to improve transparency, flexibility and accountability". 
-The specific products are listed in the [starndards section](../../standards/archtecture/Accepted-Software/code-development.md). Currently this includes GitHub and GitLab.
+The specific products are listed in the [standards section](../../standards/archtecture/Accepted-Software/code-development.md). Currently this includes GitHub and GitLab.
 
 ### Access to a GitHub repo: 
 
@@ -46,7 +46,7 @@ Soon CPS will be providing Gitlab licences, in the meantime:
 
 If you do not have a GitLab account, sign up for a [free GitLab account](https://gitlab.com/users/sign_up).
 
-If you do have a GitLab account, be sure to add your CPS emaild address to it
+If you do have a GitLab account, be sure to add your CPS emailed address to it
 
 Share your GitLab username with our GitLab admin who will grant you access to the relevant CPS repositories.
 
