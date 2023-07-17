@@ -10,7 +10,8 @@ you’re working in - and any opportunities to improve things.
 
 !!! info inline end "User Personas"
 
-    Take a look at the [Persona Guidance](../../../activities/design/personas/index.md) page for more information.
+    Take a look at the [Persona Guidance](../../../activities/user-research/personas/index.md) page for more 
+    information.
 
 Start by learning about your users and their context. This means understanding what the user’s trying to achieve and how 
 they go about doing it.
