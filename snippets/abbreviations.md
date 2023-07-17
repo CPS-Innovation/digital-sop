@@ -13,12 +13,18 @@
 *[SOP]: Standard Operating Procedures
 *[CMS]: Case Management System
 *[DID]: Digital and Information Directorate
-
+*[CIN]: Case Management System Integration Test
+*[CIN1]: Case Management System Integration Test One
+*[CIN2]: Case Management System Integration Test Two
+*[CIN3]: Case Management System Integration Test Three
+*[CIN4]: Case Management System Integration Test Four
 *[WCAG]: Web Content Accessibility Guidelines
 *[W3C]: World Wide Web Consortium
 *[WAI]: Web Accessibility Initiative
 *[HQ]: Headquarters
 *[GDS]: Government Digital Service
+*[RASSO]: Rape and Serious Sexual Offences
+*[CT]: Counter-terrorism
 
 <!-- https://geekflare.com/tech-abbreviations/ -->
 *[SQL]: Structured Query Language
