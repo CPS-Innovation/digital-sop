@@ -14,10 +14,10 @@
 *[CMS]: Case Management System
 *[DID]: Digital and Information Directorate
 *[CIN]: Case Management System Integration Test
-*[CIN1]: Case Management System Integration Test One
 *[CIN2]: Case Management System Integration Test Two
 *[CIN3]: Case Management System Integration Test Three
 *[CIN4]: Case Management System Integration Test Four
+*[CIN5]: Case Management System Integration Test Five
 *[WCAG]: Web Content Accessibility Guidelines
 *[W3C]: World Wide Web Consortium
 *[WAI]: Web Accessibility Initiative
