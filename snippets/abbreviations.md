@@ -12,10 +12,10 @@
 *[BAU]: Business as Usual
 *[SOP]: Standard Operating Procedures
 *[CMS]: Case Management System
-*[CIN1]: Case management system Integration environment One
 *[CIN2]: Case management system Integration environment two
 *[CIN3]: Case management system Integration environment three
 *[CIN4]: Case management system Integration environment four
+*[CIN5]: Case management system Integration environment five
 *[DID]: Digital and Information Directorate
 *[CIN]: Case Management System Integration Test
 *[CIN1]: Case Management System Integration Test One
