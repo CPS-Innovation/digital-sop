@@ -8,6 +8,11 @@ you’re working in - and any opportunities to improve things.
 
 ## Understanding users and their context
 
+!!! info inline end "User Personas"
+
+    Take a look at the [Persona Guidance](../../../activities/user-research/personas/index.md) page for more 
+    information.
+
 Start by learning about your users and their context. This means understanding what the user’s trying to achieve and how 
 they go about doing it.
 
@@ -22,6 +27,10 @@ includes non-government organisations too.
 
 Spend some time during discovery learning from those other teams and organisations. You should also talk to your 
 operations colleagues, given that the user’s journey is very likely to include interactions via offline channels.
+
+!!! info inline end "Accessibility Guide"
+
+    Take a look at the [Accessibility Guidance](../../../activities/accessibility/index.md) page for more information.
 
 You’ll also need to learn enough about your users’ accessibility requirements to let you work out whether the problem 
 space you’re looking at presents any particular challenges from an inclusion point of view.

@@ -5,9 +5,9 @@
 There are a number of Test Instances available and the following table compares their features, the most accurate representation of the Production System are CIN4 and the Model office.
 [A table of test environments and their features](./CMS-environments.xlsx)
 
-## How to get access to test environments CIN1, 2, 3 and 4
+## How to get access to test environments CIN2, 3, 4 and 5
 
-The process for getting access to CIN1, 2, 3 and 4 is as follows
+The process for getting access to CIN2, 3, 4 and 5 is as follows
 
 Navigate to the service request on [CPS ServiceNow Test Account Form](https://cpsprod1.service-now.com/sp?id=sc_cat_item&sys_id=3371d4e01b074110abed0e1ad34bcb9b)
 

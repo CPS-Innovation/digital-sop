@@ -40,10 +40,20 @@ function injectDiagrams(diagrams) {
         </button>
         <button class="md-raised md-button md-button--primary controls-reset">
             Reset
-        </button>`;
+        </button>
+        <dl>
+            <dt>Zoom</dt>
+            <dd>Mouse Wheel</dd>
+        
+            <dt>Pan</dt>
+            <dd>Click and Drag</dd>
+        </dl>`;
 
     const element = document.createElement('div');
     let zoomed = false;
+    let zoomedDimensions = {};
+    let pageZoom = 1.0;
+
     element.innerHTML = diagram.svg;
     element.appendChild(controls);
     element.classList.add('diagram-render');
@@ -78,24 +88,30 @@ function injectDiagrams(diagrams) {
       return false;
     }
 
+    function close() {
+      zoomed = false;
+      element.classList.remove('diagram-zoom-modal');
+      reset();
+      document.documentElement.classList.remove('hide-scrollbars');
+      document.querySelector('html').onkeyup = undefined;
+      return false;
+    }
+
     controls
       .getElementsByClassName('controls-close')
       .item(0)
-      .onclick =
-            function () {
-              zoomed = false;
-              element.classList.remove('diagram-zoom-modal');
-              reset();
-              document.documentElement.classList.remove('hide-scrollbars');
-              return false;
-            };
+      .onclick = close;
+
 
     svg.onclick = function () {
       if (!zoomed) {
+        document.querySelector('html').onkeyup = (ev) => {
+          if (ev.key === "Escape") close();
+        };
         zoomed = true;
         element.classList.add('diagram-zoom-modal');
         document.documentElement.classList.add('hide-scrollbars');
-        const pageZoom = parseFloat(document.querySelector('html').style.zoom || '1.0');
+        pageZoom = parseFloat(document.querySelector('html').style.zoom || '1.0');
         let zoomFactor = 0;
 
         if (pageZoom === 1.3) zoomFactor = 0.25;
@@ -105,6 +121,9 @@ function injectDiagrams(diagrams) {
         viewBox.height = defaultSettings.viewBox.height * pageZoom;
         viewBox.x = (viewBox.width / pageZoom) * zoomFactor;
         viewBox.y = defaultSettings.viewBox.y;
+
+        zoomedDimensions.width = viewBox.width * 2;
+        zoomedDimensions.height = viewBox.height * 2;
       }
     };
 
@@ -113,15 +132,50 @@ function injectDiagrams(diagrams) {
       .item(0)
       .onclick = reset;
 
+    element.onmousedown = () => {
+      if (!zoomed) return;
+      let lastX;
+      let lastY;
+      element.style.cursor = 'all-scroll';
+      element.onmousemove = (ev) => {
+        if (!lastX || !lastY) {
+          lastX = ev.clientX;
+          lastY = ev.clientY;
+          return;
+        }
+
+        const deltaX = lastX - ev.clientX;
+        const deltaY = lastY - ev.clientY;
+
+        viewBox.x += deltaX / 2 / pageZoom;
+        viewBox.y += deltaY / 2 / pageZoom;
+
+        lastX = ev.clientX;
+        lastY = ev.clientY;
+      };
+    };
+
+    element.onmouseup = () => {
+      if (!zoomed) return;
+      element.style.cursor = 'pointer';
+      element.onmousemove = null;
+    };
+
     element.onwheel = function (ev) {
       if (!zoomed) return;
 
       let zoomIn = (ev.wheelDelta || ev.deltaY || ev.detail || 0) > 0;
-      point.x = ev.clientX;
-      point.y = ev.clientY;
-
       let startingPoint = point.matrixTransform(svg.getScreenCTM().inverse());
       let scaleDelta = zoomIn ? 1 / 1.6 : 1.6;
+      if (
+        zoomedDimensions.width < (viewBox.width * scaleDelta) ||
+          zoomedDimensions.height < (viewBox.height * scaleDelta) ||
+          zoomedDimensions.width / 6 > (viewBox.width * scaleDelta) ||
+          zoomedDimensions.height / 6 > (viewBox.height * scaleDelta)
+      ) return;
+
+      point.x = ev.clientX;
+      point.y = ev.clientY;
 
       viewBox.x -= (startingPoint.x - viewBox.x) * (scaleDelta - 1);
       viewBox.y -= (startingPoint.y - viewBox.y) * (scaleDelta - 1);

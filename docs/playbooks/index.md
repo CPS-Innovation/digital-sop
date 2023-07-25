@@ -14,7 +14,7 @@ Broadly, an agile project will go through several phases. Each phase has a diffe
 iterations and will generally have a start and end date.
 
 [GDS Service Manual](https://www.gov.uk/service-manual){ .md-button }
-[Discovery](./10-Discovery-Playbook/index.md){ .md-button .md-button--primary }
+[Discovery](Lifecycle/10-Discovery-Playbook/index.md){ .md-button .md-button--primary }
 [Alpha](){ .md-button .md-button--disabled }
 [Beta](){ .md-button .md-button--disabled }
 [Live](){ .md-button .md-button--disabled }

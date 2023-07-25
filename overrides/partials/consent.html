@@ -58,9 +58,12 @@
       </button>
     {% endif %}
     {% if action == "manage" %}
-      <label class="md-button" for="__settings">
+      <button class="md-button"
+              for="__settings"
+              type="button"
+              onclick="document.getElementById('__settings').checked = !document.getElementById('__settings').checked;">
         {{- lang.t("consent.manage") -}}
-      </label>
+      </button>
     {% endif %}
   {% endfor %}
 </div>
