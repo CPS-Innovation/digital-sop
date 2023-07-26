@@ -1,8 +1,3 @@
----
-hide:
-  - toc
----
-
 # Reusable Patterns
 
 ## Integration with the existing CMS system
@@ -14,3 +9,5 @@ docs/playbooks/reusable-patterns/technical-approaches/Slide3.SVG
 docs/playbooks/reusable-patterns/technical-approaches/Slide4.SVG
 docs/playbooks/reusable-patterns/technical-approaches/Slide5.SVG
 ```
+
+[Download the slide deck](./technical-approaches.pptx)
