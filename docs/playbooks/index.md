@@ -11,57 +11,55 @@ This is a summary of what they cover.
 ## How to apply the GDS lifecycle
 
 Broadly, an agile project will go through several phases. Each phase has a differing end goal involving several
-iterations and will generally have a start and end date.
+iterations and will generally have a start and end date. These playbooks will guide you on how the GDS lifecycle is 
+implemented at CPS. 
 
 [GDS Service Manual](https://www.gov.uk/service-manual){ .md-button }
-[Discovery](Lifecycle/10-Discovery-Playbook/index.md){ .md-button .md-button--primary }
-[Alpha](){ .md-button .md-button--disabled }
-[Beta](){ .md-button .md-button--disabled }
-[Live](){ .md-button .md-button--disabled }
-[Retirement](){ .md-button .md-button--disabled }
+[Discovery](./Lifecycle/10-Discovery-Playbook/index.md){ .md-button .md-button--primary }
+[Alpha](./Lifecycle/20-Alpha-Playbook/index.md){ .md-button .md-button--primary }
+[Beta](./Lifecycle/30-Beta-Playbook/index.md){ .md-button .md-button--primary }
+[Live](./Lifecycle/40-Live-Playbook/index.md){ .md-button .md-button--primary }
+[Retirement](./Lifecycle/50-Retirement-Playbook/index.md){ .md-button .md-button--primary }
 
-## [How to get started as a Developer](./how-to-get-started/index.md)
+## Onboarding at CPS
 
-This Playbook covers: 
+These playbooks cover onboarding at CPS within the digital space. They detail the access you'll need and how to obtain
+it along with some tips on how we get work done at CPS.
 
-* What are the CPS Development Principles
-* What environment do I use for development, and how do I get one?
-* What development tools can I use?
-* What code repositories do I use and how do I get access
-* How do I get privileged access permissions
-* How do I manage infrastructure resources e.g. create, update and delete
+[Developers](./onboarding/new-developer.md){ .md-button .md-button--primary }
 
-## [What patterns should I reuse](./reusable-patterns/index.md)
+## Patterns
 
-This Playbook covers:
+Here we cover the various design, testing and integration patterns in use at CPS.
 
-* How can I integrate with the CMS?
-* How do we monitor services
-* How do we manage secretes and certificates
+[Integrating with CMS](./patterns/cms-integration/index.md){ .md-button .md-button--primary }
+[Testing](../activities/testing/resources.md){ .md-button .md-button--primary }
 
-## How to apply the other engineering disciplines
+## Service Playbooks
+
+[API Playbook](./service/api-playbook/index.md){ .md-button .md-button--primary }
+
+## Playbooks in Development
+
+### How to apply the other engineering disciplines
 
 * How do we manage requirements
-* [CPS Digital Accessibility Services](https://cpsgovuk.sharepoint.com/hubs/hq/dts/Pages/MeetTheITATeam.aspx) at the momenet this is only accessible internally
+* How do we ensure [accessibility](../activities/accessibility/index.md)
 * How do I extend the architecture and design a solution
-* [How do I test the solution](../activities/test-resources/index.md)
+* [How do I test the solution](../activities/testing/resources.md)
 * How do we manage releases
 * How can I get assurance for a solution
 * How do we transition a solution into service
 
-## How do we apply the different delivery methodologies
+### How do we apply the different delivery methodologies
 
 * Agile
 * Scaled Agile
 * Waterfall
 * How do most teams communicate and share knowledge
 
-## How do I participate in the CPS community of practice
+### How do I participate in the CPS community of practice
 
 * Communication channels
 * Fora and events
 * Training and development pathways
-
-## Service Playbooks
-
-[API Playbook](./API-Playbook){ .md-button .md-button--primary }
