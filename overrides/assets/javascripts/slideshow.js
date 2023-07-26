@@ -29,9 +29,9 @@ const renderSlides = () => {
     controlSlideNumbers.ariaLabel = 'Slide Position';
     controlSlideNumbers.innerText = `${slideIndex + 1} / ${slides.length}`;
 
-    deck.appendChild(controlLeft);
-    deck.appendChild(controlRight);
-    deck.appendChild(controlSlideNumbers);
+    deck.prepend(controlLeft);
+    deck.prepend(controlRight);
+    deck.prepend(controlSlideNumbers);
 
     slides.item(slideIndex).parentNode.classList.add('active');
     controlLeft.classList.add('disabled');
