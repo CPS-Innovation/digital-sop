@@ -74,7 +74,6 @@ markdown_extensions:
   - pymdownx.tasklist:
       clickable_checkbox: true
   - toc:
-      permalink: true
       title: On this page
 
 copyright: |
