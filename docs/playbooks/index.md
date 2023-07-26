@@ -60,4 +60,4 @@ Here we cover the various design, testing and integration patterns in use at CPS
 
 ## Service Playbooks
 
-[API Playbook](./API-Playbook){ .md-button .md-button--primary }
+[API Playbook](./service/api-playbook/index.md){ .md-button .md-button--primary }
