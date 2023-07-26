@@ -21,16 +21,12 @@ implemented at CPS.
 [Live](./Lifecycle/40-Live-Playbook/index.md){ .md-button .md-button--primary }
 [Retirement](./Lifecycle/50-Retirement-Playbook/index.md){ .md-button .md-button--primary }
 
-## [How to get started as a Developer](./how-to-get-started/index.md)
+## Onboarding at CPS
 
-This Playbook covers: 
+These playbooks cover onboarding at CPS within the digital space. They detail the access you'll need and how to obtain
+it along with some tips on how we get work done at CPS.
 
-* What are the CPS Development Principles
-* What environment do I use for development, and how do I get one?
-* What development tools can I use?
-* What code repositories do I use and how do I get access
-* How do I get privileged access permissions
-* How do I manage infrastructure resources e.g. create, update and delete
+[Developers](./onboarding/new-developer.md){ .md-button .md-button--primary }
 
 ## [What patterns should I reuse](./reusable-patterns/index.md)
 

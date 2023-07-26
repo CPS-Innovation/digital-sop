@@ -1,5 +1,14 @@
 # How to get started as a developer
 
+This playbook covers
+
+* CPS Development Principles
+* What environment do I use for development, and how do I get one?
+* What development tools can I use?
+* What code repositories do I use and how do I get access
+* How do I get privileged access permissions
+* How do I manage infrastructure resources e.g. create, update and delete
+
 ## Development Principles
 
 We follow the Central Digital and Data Office [Technology Code of Practice](https://www.gov.uk/guidance/the-technology-code-of-practice#be-open-and-use-open-source).
