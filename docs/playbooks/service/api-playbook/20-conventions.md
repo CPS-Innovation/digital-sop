@@ -33,7 +33,7 @@ providing an interactive and human-readable suite of documentation.
 
 > **MUST** use MADR format to document decisions.
 
-As per [0001: Record decisions using MADR](../../activities/decision-records/examples/0001-record-decisions-using-madr.md) 
+As per [0001: Record decisions using MADR](../../../activities/decision-records/examples/0001-record-decisions-using-madr.md) 
 all decision records must use MADR format. Decision records must be kept under `docs/decisions/`, each filename must be 
 in format `docs/decisions/<reference>-<hyphen separated title>.md`.
 
