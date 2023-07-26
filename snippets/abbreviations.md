@@ -30,6 +30,14 @@
 *[RASSO]: Rape and Serious Sexual Offences
 *[CT]: Counter-terrorism
 *[SIAD]: Security & Information Assurance Division
+*[PCMS]: Production Case Management System
+*[LCMS]: Live Copy Case Management System
+*[LCCMS]: Live Copy Case Management System
+*[MO]: Model Office Case Management System
+*[CPT]: Case Management System Performance Test
+*[CPT2]: Case Management System Performance Test 2
+*[CPT3]: Case Management System Performance Test 3
+*[DTS]: Digital Technology Services
 
 <!-- https://geekflare.com/tech-abbreviations/ -->
 *[SQL]: Structured Query Language
