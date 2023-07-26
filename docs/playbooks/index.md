@@ -28,13 +28,12 @@ it along with some tips on how we get work done at CPS.
 
 [Developers](./onboarding/new-developer.md){ .md-button .md-button--primary }
 
-## [What patterns should I reuse](./reusable-patterns/index.md)
+## Patterns
 
-This Playbook covers:
+Here we cover the various design, testing and integration patterns in use at CPS.
 
-* How can I integrate with the CMS?
-* How do we monitor services
-* How do we manage secretes and certificates
+[Integrating with CMS](./patterns/cms-integration/index.md){ .md-button .md-button--primary }
+[Testing](../activities/testing/resources.md){ .md-button .md-button--primary }
 
 ## How to apply the other engineering disciplines
 
