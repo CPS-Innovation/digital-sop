@@ -65,8 +65,8 @@ Coming soon a link to the repos for LowCode and Email Automation.
 
 ## Privileged Access
 
-Actually the model is different but fine, we will ask Modern Workplace and SIAD to explain why. However, today it can 
-feel a little  piece-meal and cumulative. We want to move to a model with standard role profiles and short-term 
+Actually the model is different but fine, we will ask Modern Workplace and SIAD to explain why. However, today it can
+feel a little  piece-meal and cumulative. We want to move to a model with standard role profiles and short-term
 elevations.
 
 ## Identity Management
