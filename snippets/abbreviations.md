@@ -29,6 +29,7 @@
 *[GDS]: Government Digital Service
 *[RASSO]: Rape and Serious Sexual Offences
 *[CT]: Counter-terrorism
+*[SIAD]: Security & Information Assurance Division
 
 <!-- https://geekflare.com/tech-abbreviations/ -->
 *[SQL]: Structured Query Language
