@@ -11,14 +11,15 @@ This is a summary of what they cover.
 ## How to apply the GDS lifecycle
 
 Broadly, an agile project will go through several phases. Each phase has a differing end goal involving several
-iterations and will generally have a start and end date.
+iterations and will generally have a start and end date. These playbooks will guide you on how the GDS lifecycle is 
+implemented at CPS. 
 
 [GDS Service Manual](https://www.gov.uk/service-manual){ .md-button }
-[Discovery](Lifecycle/10-Discovery-Playbook/index.md){ .md-button .md-button--primary }
-[Alpha](){ .md-button .md-button--disabled }
-[Beta](){ .md-button .md-button--disabled }
-[Live](){ .md-button .md-button--disabled }
-[Retirement](){ .md-button .md-button--disabled }
+[Discovery](./Lifecycle/10-Discovery-Playbook/index.md){ .md-button .md-button--primary }
+[Alpha](./Lifecycle/20-Alpha-Playbook/index.md){ .md-button .md-button--primary }
+[Beta](./Lifecycle/30-Beta-Playbook/index.md){ .md-button .md-button--primary }
+[Live](./Lifecycle/40-Live-Playbook/index.md){ .md-button .md-button--primary }
+[Retirement](./Lifecycle/50-Retirement-Playbook/index.md){ .md-button .md-button--primary }
 
 ## [How to get started as a Developer](./how-to-get-started/index.md)
 
