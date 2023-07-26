@@ -35,29 +35,31 @@ Here we cover the various design, testing and integration patterns in use at CPS
 [Integrating with CMS](./patterns/cms-integration/index.md){ .md-button .md-button--primary }
 [Testing](../activities/testing/resources.md){ .md-button .md-button--primary }
 
-## How to apply the other engineering disciplines
+## Service Playbooks
+
+[API Playbook](./service/api-playbook/index.md){ .md-button .md-button--primary }
+
+## Playbooks in Development
+
+### How to apply the other engineering disciplines
 
 * How do we manage requirements
-* [CPS Digital Accessibility Services](https://cpsgovuk.sharepoint.com/hubs/hq/dts/Pages/MeetTheITATeam.aspx) at the momenet this is only accessible internally
+* How do we ensure [accessibility](../activities/accessibility/index.md)
 * How do I extend the architecture and design a solution
-* [How do I test the solution](../activities/test-resources/index.md)
+* [How do I test the solution](../activities/testing/resources.md)
 * How do we manage releases
 * How can I get assurance for a solution
 * How do we transition a solution into service
 
-## How do we apply the different delivery methodologies
+### How do we apply the different delivery methodologies
 
 * Agile
 * Scaled Agile
 * Waterfall
 * How do most teams communicate and share knowledge
 
-## How do I participate in the CPS community of practice
+### How do I participate in the CPS community of practice
 
 * Communication channels
 * Fora and events
 * Training and development pathways
-
-## Service Playbooks
-
-[API Playbook](./service/api-playbook/index.md){ .md-button .md-button--primary }
