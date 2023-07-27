@@ -1,0 +1,42 @@
+name: Content Request
+description: Request new content be created, or existing content be updated.
+title: "[content]: "
+labels:
+  - content
+assignees:
+  - LoveGudu
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for taking the time to ask for a change in the Digital Standard Operating Procedures content.
+
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+
+  - type: textarea
+    id: what-content
+    attributes:
+      label: Requested Changes
+      description: What content changes would you like to see?
+      value: |
+        Add a section on how to arrange a service assessment for the transition from beta to live.
+        
+        - Link this section to the end of the beta lifecycle phase playbook.
+        - Link this section to the start of the live lifecycle phase playbook.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/CPS-Innovation/digital-sop/blob/main/CODE_OF_CONDUCT.md)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
