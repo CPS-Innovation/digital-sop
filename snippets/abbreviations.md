@@ -38,6 +38,7 @@
 *[CPT2]: Case Management System Performance Test 2
 *[CPT3]: Case Management System Performance Test 3
 *[DTS]: Digital Technology Services
+*[DDEI]: Data and Document Exchange Interface
 
 <!-- https://geekflare.com/tech-abbreviations/ -->
 *[SQL]: Structured Query Language
