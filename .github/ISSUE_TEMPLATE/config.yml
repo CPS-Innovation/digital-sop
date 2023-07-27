@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security Report
+    about: Please report security vulnerabilities to this email address.
+    url: mailto:cpscybersecurityteam@cps.gov.uk
