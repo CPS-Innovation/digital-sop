@@ -56,7 +56,7 @@ markdown_extensions:
       generic: true
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_generator: !!python/name:custom.emoji.to_svg
   - pymdownx.snippets:
       auto_append:
         - snippets/abbreviations.md

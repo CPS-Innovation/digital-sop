@@ -355,9 +355,13 @@ $$E = mc^ 2$$
 
 To include icons and emoji, use the same syntax you would on slack.
 
-For example, `:material-account-child-outline:` produces :material-account-child-outline:.
+For example, `:material-account-child-outline:{ alt="Icon: Parent and Child" }` produces 
+:material-account-child-outline:{ alt="Icon: Parent and Child" }. It is crucial to add the alternative text after the 
+icon to allow those using screen-readers to understand the meaning or context of the icon. You may omit the alternative
+text only when the meaning is clear from the icon code, for example `Supported? :material-check: Yes` will produce 
+"Supported? :material-check: Yes", the alt text being `Icon: check`.
 
-### Available Libraries
+### Available Libraries 
 
 * [Material Design Icons](https://pictogrammers.com/library/mdi/) (prefix with `:material-`)
 * [Font Awesome Icons](https://fontawesome.com/search?o=r&m=free) (prefix with `:fontawesome-`)
