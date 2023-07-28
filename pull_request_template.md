@@ -22,6 +22,10 @@
     - [ ] Page headings are not duplicated on the same page.
   - Admonitions
     - [ ] Embedded admonitions (`!!! note`) with titles are prefixed with the type (`!!! note "Note: you might be interested in"`)
+  - Diagrams
+    - [ ] Embedded diagrams have a text description underneath that adequately describes the contents of the diagram including relationships.
+    - [ ] Above the diagram there is a "Skip to description" link.
+    - For guidance see [the diagram documentation](https://cps-innovation.github.io/digital-sop/activities/documentation/kitchen-sink/#plantuml-diagrams)
   - Images
     - [ ] Embedded images have alt text present.
     - [ ] Embedded images that include text have that text included in the alt text.

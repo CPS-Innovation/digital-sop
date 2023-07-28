@@ -19,6 +19,9 @@ that present themselves during development.
 To ensure diagrams clearly communicate the intended contextual information it's a good idea to assess diagrams for 
 clarity. The [C4 Diagram Bingo card](https://c4model.com/bingo/) can make assessing diagrams more engaging.
 
+While diagramming is important, you must not forget colleagues with visual impairments. **All diagrams must be 
+accompanied by a description sufficient to understand the contents.** 
+
 For more information on C4 diagramming see [the C4 website](https://c4model.com/).
 
 ## Core Diagrams
@@ -35,6 +38,8 @@ third-party systems integrated with the system.
 Detail isn't important here as this is your zoomed out view showing a big picture of the system landscape. The focus 
 should be on people (actors, roles, personas, etc) and software systems rather than technologies, protocols and other 
 low-level details. It's the sort of diagram that you could show to non-technical people.
+
+[Skip to Diagram Description](#c4_context_description)
 
 ```diagram-plantuml
 @startuml
@@ -58,6 +63,38 @@ Rel(banking_system, mainframe, "Uses")
 SHOW_DYNAMIC_LEGEND()
 @enduml
 ```
+
+!!! info "Info: System Context diagram description"
+
+    <a id="c4_context_description"></a>
+    This PlantUML diagram represents a "System Context diagram for Internet Banking System." The diagram illustrates the 
+    relationships and interactions between various components involved in the internet banking system. Let's break down 
+    the elements of the diagram:
+    
+    Title: "System Context diagram for Internet Banking System"
+    
+    Components:
+    
+    1. Person: Represented as "Personal Banking Customer." This component represents a customer of the bank who has 
+       personal bank accounts.
+    2. System: Represented as "Internet Banking System." This is the main system that enables customers to view 
+       information about their bank accounts and make payments.
+    3. External System: Represented as "E-mail system." This external system is the internal Microsoft Exchange e-mail 
+       system used by the bank.
+    4. External System: Represented as "Mainframe Banking System." This external system stores all the core banking 
+       information about customers, accounts, transactions, etc.
+    
+    Relationships:
+    
+    1. The "Personal Banking Customer" uses the "Internet Banking System."
+    2. The "Personal Banking Customer" sends e-mails to the "E-mail system."
+    3. The "Internet Banking System" sends e-mails to the "E-mail system" using SMTP (Simple Mail Transfer Protocol).
+    4. The "Internet Banking System" uses the "Mainframe Banking System."
+    
+    Overall, this System Context diagram shows the primary components of the Internet Banking System, the relationships 
+    between those components, and their interactions with external systems such as the E-mail system and the Mainframe 
+    Banking System. It provides an overview of how the different parts of the banking system fit together at a high 
+    level.
 
 Source: [C4 Model Sample Context Diagram](https://github.com/plantuml-stdlib/C4-PlantUML/blob/master/samples/C4_Context%20Diagram%20Sample%20-%20bigbankplc.puml)
 

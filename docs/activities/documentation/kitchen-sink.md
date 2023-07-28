@@ -393,6 +393,13 @@ text only when the meaning is clear from the icon code, for example `Supported? 
 PlantUML diagrams use the PlantUML web service to render diagrams. They support click to zoom, allowing for more complex
 diagrams.
 
+While diagramming is important, you must not forget colleagues with visual impairments. **All diagrams must be 
+accompanied by a description sufficient to understand the contents.** If allowed, generative AI tools like ChatGPT can
+create a text description of any diagram by asking the following: "Create a text description of the following plantuml 
+diagram: `<paste diagram code here>`", the resulting description can then be included under the diagram.
+
+[Skip to Diagram Description](#c4_context_description)
+
 ```diagram-plantuml
 @startuml
 !include <C4/C4_Component>
@@ -426,6 +433,42 @@ SHOW_DYNAMIC_LEGEND()
 @enduml
 ```
 
+!!! info "Info: System Context diagram description"
+
+    <a id="c4_context_description"></a>
+    This PlantUML diagram represents a "System Context diagram for Internet Banking System." The diagram illustrates the 
+    relationships and interactions between various components involved in the internet banking system. Let's break down 
+    the elements of the diagram:
+    
+    Title: "System Context diagram for Internet Banking System"
+    
+    Components:
+    
+    1. Person: Represented as "Personal Banking Customer." This component represents a customer of the bank who has 
+       personal bank accounts.
+    2. System: Represented as "Internet Banking System." This is the main system that enables customers to view 
+       information about their bank accounts and make payments.
+    3. External System: Represented as "E-mail system." This external system is the internal Microsoft Exchange e-mail 
+       system used by the bank.
+    4. External System: Represented as "Mainframe Banking System." This external system stores all the core banking 
+       information about customers, accounts, transactions, etc.
+    
+    Relationships:
+    
+    1. The "Personal Banking Customer" uses the "Internet Banking System."
+    2. The "Personal Banking Customer" sends e-mails to the "E-mail system."
+    3. The "Internet Banking System" sends e-mails to the "E-mail system" using SMTP (Simple Mail Transfer Protocol).
+    4. The "Internet Banking System" uses the "Mainframe Banking System."
+    
+    Overall, this System Context diagram shows the primary components of the Internet Banking System, the relationships 
+    between those components, and their interactions with external systems such as the E-mail system and the Mainframe 
+    Banking System. It provides an overview of how the different parts of the banking system fit together at a high 
+    level.
+
+The following code was used to produce the above diagram and description.
+
+    [Skip to Diagram Description](#c4_context_description)
+    
     ```diagram-plantuml
     @startuml
     !include <C4/C4_Component>
@@ -458,6 +501,38 @@ SHOW_DYNAMIC_LEGEND()
     SHOW_DYNAMIC_LEGEND()
     @enduml
     ```
+
+    !!! info "Info: System Context diagram description"
+    
+        <a id="c4_context_description"></a>
+        This PlantUML diagram represents a "System Context diagram for Internet Banking System." The diagram illustrates the 
+        relationships and interactions between various components involved in the internet banking system. Let's break down 
+        the elements of the diagram:
+        
+        Title: "System Context diagram for Internet Banking System"
+        
+        Components:
+        
+        1. Person: Represented as "Personal Banking Customer." This component represents a customer of the bank who has 
+           personal bank accounts.
+        2. System: Represented as "Internet Banking System." This is the main system that enables customers to view 
+           information about their bank accounts and make payments.
+        3. External System: Represented as "E-mail system." This external system is the internal Microsoft Exchange e-mail 
+           system used by the bank.
+        4. External System: Represented as "Mainframe Banking System." This external system stores all the core banking 
+           information about customers, accounts, transactions, etc.
+        
+        Relationships:
+        
+        1. The "Personal Banking Customer" uses the "Internet Banking System."
+        2. The "Personal Banking Customer" sends e-mails to the "E-mail system."
+        3. The "Internet Banking System" sends e-mails to the "E-mail system" using SMTP (Simple Mail Transfer Protocol).
+        4. The "Internet Banking System" uses the "Mainframe Banking System."
+        
+        Overall, this System Context diagram shows the primary components of the Internet Banking System, the relationships 
+        between those components, and their interactions with external systems such as the E-mail system and the Mainframe 
+        Banking System. It provides an overview of how the different parts of the banking system fit together at a high 
+        level.
 
 ## Basic Diagrams
 
