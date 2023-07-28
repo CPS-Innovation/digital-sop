@@ -71,7 +71,7 @@ def to_svg(index, shortname, alias, uc, alt, title, category, options, md):
     alt_text = shortname.replace('-', ' ').replace(':', '')
     # Remove icon bundle specific naming
     alt_text = alt_text.replace('material ', '').replace('fontawesome ', '').replace('octicons ', '')
-    alt = f"Icon: {alt_text}"
+    alt_text = f"Icon: {alt_text}"
 
     if is_unicode:
         # Handle Twemoji emoji.
@@ -79,7 +79,7 @@ def to_svg(index, shortname, alias, uc, alt, title, category, options, md):
 
         attributes = {
             "class": options.get('classes', index),
-            "alt": alt,
+            "alt": alt_text,
             "src": "%s%s.svg" % (
                 options.get('image_path', svg_path),
                 uc
@@ -97,6 +97,6 @@ def to_svg(index, shortname, alias, uc, alt, title, category, options, md):
         with codecs.open(svg_path, 'r', encoding='utf-8') as f:
             return etree.Element('img', {
                 "class": options.get('classes', index),
-                "alt": alt,
+                "alt": alt_text,
                 "src": f'data:image/svg+xml;base64,{str(base64.b64encode(f.read().encode("utf-8")), "utf-8")}'
             })
