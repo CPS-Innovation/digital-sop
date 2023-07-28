@@ -64,6 +64,7 @@ else:  # pragma: no cover
 
 def to_svg(index, shortname, alias, uc, alt, title, category, options, md):
     """Return SVG element."""
+    _ignored = [index, shortname, alias, uc, alt, title, category, options, md]
 
     is_unicode = uc is not None
 
