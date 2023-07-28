@@ -106,16 +106,37 @@ alternative text describing the image.
 
 ## Admonitions
 
+Admonitions, also known as call-outs, are an excellent choice for including side content without significantly 
+interrupting the document flow.
+
+When using an admonition it is important to account for users with screen readers. When giving the admonition a title,
+you must prefix that title with the type of admonition. 
+
+For example when including a `warning` with a title you must use the following
+
+!!! warning inline end "Warning: beware the pigeons!"
+    
+    There are many pigeons around London, watch out for them!
+
+```markdown
+!!! warning inline end "Warning: beware the pigeons!"
+    
+    There are many pigeons around London, watch out for them!
+```
+
+This ensures the contextual information sighted users derive from the colour and icon is also accessible to partially 
+and non-sighted users.
+
 ### Main
 
-!!! note "Note title"
+!!! note "Note: title"
 
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
     nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
     massa, nec semper lorem quam in massa.
 
 ```markdown
-!!! note "Note title"
+!!! note "Note: title"
 
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
     nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor

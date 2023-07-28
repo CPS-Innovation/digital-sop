@@ -89,7 +89,7 @@ You could work towards this at alpha by:
 
 ## Making sure everyone can use your service
 
-!!! info inline end "Accessibility Guide"
+!!! info inline end "Info: Accessibility"
 
     Take a look at the [Accessibility Guidance](../../../activities/accessibility/index.md) page for more information.
 

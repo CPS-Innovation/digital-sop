@@ -1,6 +1,6 @@
 # Live Playbook
 
-!!! note "Work in Progress"
+!!! note "Note: Work in Progress"
 
     This playbook is a direct copy of the [GDS agile guidelines](https://www.gov.uk/service-manual/agile-delivery)
     and serves as a starting point for CPS specific implementations.

@@ -61,7 +61,7 @@ SHOW_DYNAMIC_LEGEND()
 
 Source: [C4 Model Sample Context Diagram](https://github.com/plantuml-stdlib/C4-PlantUML/blob/master/samples/C4_Context%20Diagram%20Sample%20-%20bigbankplc.puml)
 
-!!! info "System Context Diagram Details"
+!!! info "Info: System Context Diagram Details"
 
     **Scope**: A single software system.
     
@@ -126,7 +126,7 @@ SHOW_DYNAMIC_LEGEND()
 
 Source: [C4 Model Sample Container Diagram](https://github.com/plantuml-stdlib/C4-PlantUML/blob/master/samples/C4_Container%20Diagram%20Sample%20-%20bigbankplc.puml)
 
-!!! info "Container Diagram Details"
+!!! info "Info: Container Diagram Details"
 
     **Scope**: A single software system.
     
@@ -184,7 +184,7 @@ SHOW_DYNAMIC_LEGEND()
 
 Source: [C4 Model Sample Component Diagram](https://github.com/plantuml-stdlib/C4-PlantUML/blob/master/samples/C4_Component%20Diagram%20Sample%20-%20bigbankplc.puml)
 
-!!! info "Component Diagram Details"
+!!! info "Info: Component Diagram Details"
 
     **Scope**: A single container.
     
@@ -249,7 +249,7 @@ SHOW_DYNAMIC_LEGEND()
 
 Source: [C4 Model Sample System Landscape Diagram](https://github.com/plantuml-stdlib/C4-PlantUML/blob/master/samples/C4_Context%20Diagram%20Sample%20-%20bigbankplc-landscape.puml)
 
-!!! info "System Landscape Diagram Details"
+!!! info "Info: System Landscape Diagram Details"
 
     **Scope**: An enterprise/organisation/department/etc.
     
@@ -337,7 +337,7 @@ SHOW_DYNAMIC_LEGEND()
 
 Source: [C4 Model Sample Deployment Diagram](https://github.com/plantuml-stdlib/C4-PlantUML/blob/master/samples/C4_Deployment%20Diagram%20Sample%20-%20bigbankplc-details.puml)
 
-!!! info "Deployment Diagram Details"
+!!! info "Info: Deployment Diagram Details"
 
     **Scope**: One or more software systems within a single deployment environment (e.g. production, staging, 
     development, etc).

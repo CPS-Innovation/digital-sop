@@ -8,7 +8,7 @@ you're working in - and any opportunities to improve things.
 
 ## Understanding users and their context
 
-!!! info inline end "User Personas"
+!!! info inline end "Info: User Personas"
 
     Take a look at the [Persona Guidance](../../../activities/user-research/personas/index.md) page for more 
     information.
@@ -28,7 +28,7 @@ includes non-government organisations too.
 Spend some time during discovery learning from those other teams and organisations. You should also talk to your 
 operations colleagues, given that the user's journey is very likely to include interactions via offline channels.
 
-!!! info inline end "Accessibility Guide"
+!!! info inline end "Info: Accessibility"
 
     Take a look at the [Accessibility Guidance](../../../activities/accessibility/index.md) page for more information.
 
