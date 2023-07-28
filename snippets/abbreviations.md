@@ -39,6 +39,7 @@
 *[CPT3]: Case Management System Performance Test 3
 *[DTS]: Digital Technology Services
 *[DDEI]: Data and Document Exchange Interface
+*[SPA]: Single Page Application
 
 <!-- https://geekflare.com/tech-abbreviations/ -->
 *[SQL]: Structured Query Language
