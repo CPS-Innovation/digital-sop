@@ -398,7 +398,7 @@ accompanied by a description sufficient to understand the contents.** If allowed
 create a text description of any diagram by asking the following: "Create a text description of the following plantuml 
 diagram: `<paste diagram code here>`", the resulting description can then be included under the diagram.
 
-[Skip to Diagram Description](#c4_context_description)
+[Skip to Diagram Description](#c4_component_description)
 
 ```diagram-plantuml
 @startuml
@@ -433,41 +433,48 @@ SHOW_DYNAMIC_LEGEND()
 @enduml
 ```
 
-!!! info "Info: System Context diagram description"
 
-    <a id="c4_context_description"></a>
-    This PlantUML diagram represents a "System Context diagram for Internet Banking System." The diagram illustrates the 
-    relationships and interactions between various components involved in the internet banking system. Let's break down 
-    the elements of the diagram:
+??? info "Info: System Context diagram description"
+
+    <a id="c4_component_description"></a>
+    This PlantUML diagram represents a "Component diagram for Internet Banking System - API Application." The diagram illustrates the components and their interactions within the API Application that forms part of the Internet Banking System. Let's break down the elements of the diagram:
+
+    Title: "Component diagram for Internet Banking System - API Application"
     
-    Title: "System Context diagram for Internet Banking System"
+    Containers:
+
+    1. Container: Represented as "Single Page Application (SPA)." This container is implemented using JavaScript and Angular and provides all the internet banking functionality to customers via their web browsers.
+    2. Container: Represented as "Mobile App (MA)." This container is implemented using Xamarin and provides a limited subset of the internet banking functionality to customers via their mobile devices.
+    3. ContainerDb: Represented as "Database." This container represents the Relational Database Schema and stores user registration information, hashed authentication credentials, access logs, etc.
+    4. System_Ext: Represented as "Mainframe Banking System (MBS)." This external system stores all the core banking information about customers, accounts, transactions, etc.
+    
+    Container Boundary:
+    The "API Application" is a boundary that groups related components within it.
     
     Components:
-    
-    1. Person: Represented as "Personal Banking Customer." This component represents a customer of the bank who has 
-       personal bank accounts.
-    2. System: Represented as "Internet Banking System." This is the main system that enables customers to view 
-       information about their bank accounts and make payments.
-    3. External System: Represented as "E-mail system." This external system is the internal Microsoft Exchange e-mail 
-       system used by the bank.
-    4. External System: Represented as "Mainframe Banking System." This external system stores all the core banking 
-       information about customers, accounts, transactions, etc.
+
+    1. Component: Represented as "Sign In Controller." This MVC Rest Controller component allows users to sign in to the internet banking system.
+    2. Component: Represented as "Accounts Summary Controller." This MVC Rest Controller component provides customers with a summary of their bank accounts.
+    3. Component: Represented as "Security Component." This Spring Bean component provides functionality related to signing in, changing passwords, etc.
+    4. Component: Represented as "Mainframe Banking System Facade." This Spring Bean component serves as a facade onto the mainframe banking system.
     
     Relationships:
+
+    1. The "Sign In Controller" component uses the "Security Component."
+    2. The "Accounts Summary Controller" component uses the "Mainframe Banking System Facade."
+    3. The "Security Component" component reads and writes to the "Database" using JDBC (Java Database Connectivity).
+    4. The "Mainframe Banking System Facade" component uses the "Mainframe Banking System" through XML/HTTPS communication.
     
-    1. The "Personal Banking Customer" uses the "Internet Banking System."
-    2. The "Personal Banking Customer" sends e-mails to the "E-mail system."
-    3. The "Internet Banking System" sends e-mails to the "E-mail system" using SMTP (Simple Mail Transfer Protocol).
-    4. The "Internet Banking System" uses the "Mainframe Banking System."
+    Additional Relationships:
+
+    1. The "Single Page Application (SPA)" uses the "Sign In Controller" and "Accounts Summary Controller" components through JSON/HTTPS communication.
+    2. The "Mobile App (MA)" uses the "Sign In Controller" and "Accounts Summary Controller" components through JSON/HTTPS communication.
     
-    Overall, this System Context diagram shows the primary components of the Internet Banking System, the relationships 
-    between those components, and their interactions with external systems such as the E-mail system and the Mainframe 
-    Banking System. It provides an overview of how the different parts of the banking system fit together at a high 
-    level.
+    Overall, this Component diagram showcases the API Application's architecture for the Internet Banking System. It illustrates how the Single Page Application (SPA) and Mobile App (MA) interact with the Sign In Controller and Accounts Summary Controller, which in turn communicate with the Security Component and the Mainframe Banking System Facade to provide various banking functionalities to the end-users. Additionally, the diagram highlights the interaction of these components with the underlying Database and the Mainframe Banking System.
 
 The following code was used to produce the above diagram and description.
 
-    [Skip to Diagram Description](#c4_context_description)
+    [Skip to Diagram Description](#c4_component_description)
     
     ```diagram-plantuml
     @startuml
@@ -502,37 +509,44 @@ The following code was used to produce the above diagram and description.
     @enduml
     ```
 
-    !!! info "Info: System Context diagram description"
+    ??? info "Info: System Context diagram description"
+
+        <a id="c4_component_description"></a>
+        This PlantUML diagram represents a "Component diagram for Internet Banking System - API Application." The diagram illustrates the components and their interactions within the API Application that forms part of the Internet Banking System. Let's break down the elements of the diagram:
     
-        <a id="c4_context_description"></a>
-        This PlantUML diagram represents a "System Context diagram for Internet Banking System." The diagram illustrates the 
-        relationships and interactions between various components involved in the internet banking system. Let's break down 
-        the elements of the diagram:
+        Title: "Component diagram for Internet Banking System - API Application"
         
-        Title: "System Context diagram for Internet Banking System"
+        Containers:
+
+        1. Container: Represented as "Single Page Application (SPA)." This container is implemented using JavaScript and Angular and provides all the internet banking functionality to customers via their web browsers.
+        2. Container: Represented as "Mobile App (MA)." This container is implemented using Xamarin and provides a limited subset of the internet banking functionality to customers via their mobile devices.
+        3. ContainerDb: Represented as "Database." This container represents the Relational Database Schema and stores user registration information, hashed authentication credentials, access logs, etc.
+        4. System_Ext: Represented as "Mainframe Banking System (MBS)." This external system stores all the core banking information about customers, accounts, transactions, etc.
+        
+        Container Boundary:
+        The "API Application" is a boundary that groups related components within it.
         
         Components:
-        
-        1. Person: Represented as "Personal Banking Customer." This component represents a customer of the bank who has 
-           personal bank accounts.
-        2. System: Represented as "Internet Banking System." This is the main system that enables customers to view 
-           information about their bank accounts and make payments.
-        3. External System: Represented as "E-mail system." This external system is the internal Microsoft Exchange e-mail 
-           system used by the bank.
-        4. External System: Represented as "Mainframe Banking System." This external system stores all the core banking 
-           information about customers, accounts, transactions, etc.
+
+        1. Component: Represented as "Sign In Controller." This MVC Rest Controller component allows users to sign in to the internet banking system.
+        2. Component: Represented as "Accounts Summary Controller." This MVC Rest Controller component provides customers with a summary of their bank accounts.
+        3. Component: Represented as "Security Component." This Spring Bean component provides functionality related to signing in, changing passwords, etc.
+        4. Component: Represented as "Mainframe Banking System Facade." This Spring Bean component serves as a facade onto the mainframe banking system.
         
         Relationships:
+
+        1. The "Sign In Controller" component uses the "Security Component."
+        2. The "Accounts Summary Controller" component uses the "Mainframe Banking System Facade."
+        3. The "Security Component" component reads and writes to the "Database" using JDBC (Java Database Connectivity).
+        4. The "Mainframe Banking System Facade" component uses the "Mainframe Banking System" through XML/HTTPS communication.
         
-        1. The "Personal Banking Customer" uses the "Internet Banking System."
-        2. The "Personal Banking Customer" sends e-mails to the "E-mail system."
-        3. The "Internet Banking System" sends e-mails to the "E-mail system" using SMTP (Simple Mail Transfer Protocol).
-        4. The "Internet Banking System" uses the "Mainframe Banking System."
+        Additional Relationships:
+
+        1. The "Single Page Application (SPA)" uses the "Sign In Controller" and "Accounts Summary Controller" components through JSON/HTTPS communication.
+        2. The "Mobile App (MA)" uses the "Sign In Controller" and "Accounts Summary Controller" components through JSON/HTTPS communication.
         
-        Overall, this System Context diagram shows the primary components of the Internet Banking System, the relationships 
-        between those components, and their interactions with external systems such as the E-mail system and the Mainframe 
-        Banking System. It provides an overview of how the different parts of the banking system fit together at a high 
-        level.
+        Overall, this Component diagram showcases the API Application's architecture for the Internet Banking System. It illustrates how the Single Page Application (SPA) and Mobile App (MA) interact with the Sign In Controller and Accounts Summary Controller, which in turn communicate with the Security Component and the Mainframe Banking System Facade to provide various banking functionalities to the end-users. Additionally, the diagram highlights the interaction of these components with the underlying Database and the Mainframe Banking System.
+
 
 ## Basic Diagrams
 
