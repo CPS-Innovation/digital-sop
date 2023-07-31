@@ -37,9 +37,9 @@ jobs:
       - uses: actions/github-script@v6
         with:
           script: |
-            import {execFile} from 'child_process';
-            import {resolve} from 'path';
-            import {promisify} from 'util';
+            const {execFile} = require('child_process');
+            const {resolve} = require('path');
+            const {promisify} = require('util');
         
             const {stdout} = await promisify(execFile)(
                 resolve(process.cwd(), '.github', 'scripts', 'git-file-update-dates.sh'),
