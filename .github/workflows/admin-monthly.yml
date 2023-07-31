@@ -77,7 +77,8 @@ jobs:
             ${files.map(f => `- [ ] [${f.filename}](${f.viewUrl}) (Last update ${f.updated.toLocaleString()})`).join('\n')}
             
             Once you have checked each file and checked the box, write a comment at the bottom of this issue indicating the files have been checked. Then click "Close with comment".
-            `,
+            
+            **This issue was created [automatically](https://github.com/CPS-Innovation/digital-sop/tree/main/.github/workflows/admin-monthly.yml)**`,
             });
         
             const {data: users} = await github.rest.repos.listCollaborators({
