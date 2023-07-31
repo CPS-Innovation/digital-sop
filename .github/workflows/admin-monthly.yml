@@ -71,7 +71,7 @@ jobs:
         
             const {data: {number: issue_number}} = await github.rest.issues.create({
                 owner, repo, title: 'Monthly Content Check',
-                description: `The following files were updated over a month ago, please read each page and once you have confirmed no updates are needed tick the box in the list.
+                body: `The following files were updated over a month ago, please read each page and once you have confirmed no updates are needed tick the box in the list.
             
             If a file does need an update, follow the process given in the [documentation](https://cps-innovation.github.io/digital-sop/activities/documentation/updating-this-site/) to update the file.
             
