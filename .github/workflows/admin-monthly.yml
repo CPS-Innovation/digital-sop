@@ -3,12 +3,13 @@ name: Admin Checks (Monthly)
 on:
   schedule:
     - cron: "0 8 * * 1"
+  push: null
 
 jobs:
   should-run:
     runs-on: ubuntu-latest
     outputs:
-      is-first-monday: ${{ steps.first-monday.outputs.YES }}"
+      is-first-monday: "true"
     steps:
       - name: check (first-monday)
         id: first-monday
