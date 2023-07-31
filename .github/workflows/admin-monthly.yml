@@ -69,7 +69,7 @@ jobs:
             const owner = 'cps-innovation';
             const repo = 'digital-sop';
         
-            const {number: issue_number} = await github.rest.issues.create({
+            const {data: {number: issue_number}} = await github.rest.issues.create({
                 owner, repo, title: 'Monthly Content Check',
                 description: `The following files were updated over a month ago, please read each page and once you have confirmed no updates are needed tick the box in the list.
             
@@ -81,7 +81,7 @@ jobs:
             `,
             });
         
-            const users = await github.rest.repos.listCollaborators({
+            const {data: users} = await github.rest.repos.listCollaborators({
               owner,
               repo,
             });
