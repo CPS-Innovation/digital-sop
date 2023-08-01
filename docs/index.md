@@ -13,3 +13,5 @@ responsibilities, including minimizing our carbon footprint, making transparent 
 responsible partners, and striving for societal advancement.
 
 > User-centred technology that helps us learn faster, with less risk.
+
+This website is intended for use by developers in the CPS to help them to collaborate with other teams within the directorate.
