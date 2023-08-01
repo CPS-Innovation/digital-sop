@@ -31,7 +31,7 @@ to install software.
 
 ## Development Tools
 
-These are listed in the [standards section](../../standards/archtecture/Accepted-Software/code-development.md)
+Software is listed in the [standards section](../../standards/archtecture/Accepted-Software/code-development.md)
 Required Software Tools.
 
 A software audit is performed on the machines to help remind people when they forget to use the approved set of tools
