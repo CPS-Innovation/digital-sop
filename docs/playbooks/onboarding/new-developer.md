@@ -31,10 +31,26 @@ to install software.
 
 ## Development Tools
 
-These are listed in the [standards section](../../standards/archtecture/Accepted-Software/code-development.md)
+Software is listed in the [standards section](../../standards/archtecture/Accepted-Software/code-development.md)
 Required Software Tools.
 
 A software audit is performed on the machines to help remind people when they forget to use the approved set of tools
+
+Developers are supplied with one of the following models of laptop. 
+
+| Model  | CPU  | RAM | Hard drive | 
+|:---|:---:|:---:|:---:|
+| Surface 3 | i7-1065G7 | 16 GB | 256 GB | 
+| Surface 4 | i7-1185G7 | 16 GB | 256 GB |
+| Surface 5 | i7-1255U | 16 GB | 256 GB |
+
+You will also receive 
+
+* 1 x USB-C travel hub
+* 1 x USB 4 port hub
+* 1 x power cord
+* 1 x printer fob
+* Setup instructions
 
 ## Access to Repositories
 

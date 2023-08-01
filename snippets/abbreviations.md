@@ -42,6 +42,8 @@
 *[SPA]: Single Page Application
 *[EHRC]: Equality and Human Rights Commission
 *[EASS]: Equality Advisory and Support Service
+*[CPU]: Central Processing Unit
+*[GB]: Gigabyte
 
 <!-- https://geekflare.com/tech-abbreviations/ -->
 *[SQL]: Structured Query Language
