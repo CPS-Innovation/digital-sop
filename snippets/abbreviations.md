@@ -40,6 +40,8 @@
 *[DTS]: Digital Technology Services
 *[DDEI]: Data and Document Exchange Interface
 *[SPA]: Single Page Application
+*[EHRC]: Equality and Human Rights Commission
+*[EASS]: Equality Advisory and Support Service
 
 <!-- https://geekflare.com/tech-abbreviations/ -->
 *[SQL]: Structured Query Language
