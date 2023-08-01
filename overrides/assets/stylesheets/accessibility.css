@@ -102,3 +102,7 @@ html.theme-yellow-on-black .md-search-result__more > summary:hover > div {
     background-color: #0027ffc7;
     color: white;
 }
+
+.md-sidebar__inner > nav {
+    margin-top: 15px;
+}

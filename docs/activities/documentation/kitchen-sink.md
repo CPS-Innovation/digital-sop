@@ -93,6 +93,14 @@ docs/activities/documentation/technical-approaches/Slide4.SVG
 docs/activities/documentation/technical-approaches/Slide5.SVG
 ```
 
+When you add a slideshow to the site, you must always add a link to download the file. To do this, place a copy of the
+PowerPoint file in the same directory as the page you are updating, ensuring that the file name contains no spaces. Then
+add a link under the slideshow as follows.
+
+```markdown
+[Download this slideshow](./slideshow-file.pptx)
+```
+
 ## Images
 
 You can embed uploaded images as follows. In order to ensure the accessibility of images, you **must** include 
