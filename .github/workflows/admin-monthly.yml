@@ -1,0 +1,91 @@
+name: Admin Checks (Monthly)
+
+on:
+  schedule:
+    - cron: "0 8 * * 1"
+
+jobs:
+  should-run:
+    runs-on: ubuntu-latest
+    outputs:
+      is-first-monday: "${{ steps.first-monday.outputs.YES }}"
+    steps:
+      - name: check (first-monday)
+        id: first-monday
+        run: |
+          export WEEK_DAY=$(LC_TIME=C date +%A)
+          export DAY_OF_MONTH=$(date +%d)
+          if [ "$WEEK_DAY" = "Monday" ] && [ "$DAY_OF_MONTH" -lt 8 ]
+          then 
+          echo "YES=true" >> "$GITHUB_OUTPUT"
+          else
+          echo "YES=false" >> "$GITHUB_OUTPUT"
+          fi
+
+  first-monday:
+    runs-on: ubuntu-latest
+    needs: [ should-run ]
+    if: ${{ needs.should-run.outputs.is-first-monday }}
+    permissions:
+      issues: write
+      contents: write
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - uses: actions/github-script@v6
+        with:
+          script: |
+            const {execFile} = require('child_process');
+            const {resolve} = require('path');
+            const {promisify} = require('util');
+        
+            const {stdout} = await promisify(execFile)(
+                resolve(process.cwd(), '.github', 'scripts', 'git-file-update-dates.sh'),
+                {cwd: process.cwd(), shell: '/usr/bin/bash'},
+            );
+        
+            const oneMonthAgo = new Date();
+            oneMonthAgo.setMonth(oneMonthAgo.getMonth() - 1);
+        
+            const files = stdout.split('\n')
+                .filter(l => !!l)
+                .map(f => ({updated: new Date(f.split('docs/')[0]), filename: `docs/${f.split('docs/')[1]}`}))
+                .filter(f => f.updated.getTime() < oneMonthAgo.getTime())
+                .map(value => ({value, sort: Math.random()}))
+                .sort((a, b) => a.sort - b.sort)
+                .map(({value}) => value)
+                .slice(0, 10)
+                .sort((a, b) => a.updated - b.updated)
+                .map(f => {
+                    const urlPath = f.filename.replace(/^docs\//, '')
+                        .replace(/\.md$/, '')
+                        .replace(/\/index$/, '');
+        
+                    return {...f, viewUrl: `https://cps-innovation.github.io/digital-sop/${urlPath}`};
+                });
+        
+            const owner = 'cps-innovation';
+            const repo = 'digital-sop';
+        
+            const {data: {number: issue_number}} = await github.rest.issues.create({
+                owner, repo, title: 'Monthly Content Check',
+                body: `The following files were updated over a month ago, please read each page and once you have confirmed no updates are needed tick the box in the list.
+            
+            If a file does need an update, follow the process given in the [documentation](https://cps-innovation.github.io/digital-sop/activities/documentation/updating-this-site/) to update the file.
+            
+            ${files.map(f => `- [ ] [${f.filename}](${f.viewUrl}) (Last update ${f.updated.toLocaleString()})`).join('\n')}
+            
+            Once you have checked each file and checked the box, write a comment at the bottom of this issue indicating the files have been checked. Then click "Close with comment".
+            
+            **This issue was created [automatically](https://github.com/CPS-Innovation/digital-sop/tree/main/.github/workflows/admin-monthly.yml)**`,
+            });
+        
+            const {data: users} = await github.rest.repos.listCollaborators({
+              owner,
+              repo,
+            });
+        
+            await github.rest.issues.addAssignees({
+                owner, repo, issue_number, assignees: users.filter(u => u.role_name === 'admin').map(u => u.login),
+            });
