@@ -10,7 +10,7 @@ hide:
 The decisions we make when delivering digital services carry significant implications for the speed and efficacy of case 
 prosecution, the allocation of taxpayer funds, and the security of data. Additionally, we must fulfill our broader 
 responsibilities, including minimizing our carbon footprint, making transparent business choices, collaborating with 
-responsible partners, and striving for societal advancement.
+responsible partners, and striving for societal advancement. For a more detailed look at our strategy, take a look at our [strategy page](./strategy/index.md).
 
 > User-centred technology that helps us learn faster, with less risk.
 
