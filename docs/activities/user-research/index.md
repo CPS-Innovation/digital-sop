@@ -7,3 +7,14 @@ As we adhere to the Government Service Standard, user research plays a pivotal r
 To support teams in conducting user research to a high ethical standard and following best practices, we have created a user research playbook which describes how you can conduct your research in the best possible way. To ensure these ethical standards are met, user researchers are encouraged to read the playbook and work to it throughout your time with the Crown Prosecution Service. 
 
 To further support teams delivering for our users, on this page we have created some high level persona’s to give you an understanding of our key user groups. 
+
+## User Research Values and Principles
+
+As a user research community, we have agreed the following research values and principles that we will work towards in all of the research we conduct and would expect the same of anyone temporarily joining our CPS user Research Community. 
+
+- We include all of our users and bring them to the heart of our work.
+- We are objective and use evidence.
+- We do high quality, safe and ethical research.
+- We are adaptable and collaborative, and focus our research in the right places.
+- We learn as a community and by ourselves.
+- We celebrate our work and help others understand what we do.
