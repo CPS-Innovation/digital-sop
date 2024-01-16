@@ -1,9 +1,3 @@
----
-hide:
-  - navigation
-  - toc
----
-
 # Strategy
 
 ## Our vision and approach for digital and data
