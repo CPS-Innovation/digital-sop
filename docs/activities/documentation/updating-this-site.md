@@ -8,6 +8,8 @@ To update or add new pages you will need the following:
 * An accepted invitation to the [CPS-Innovation](https://github.com/CPS-Innovation) GitHub organisation (This is not self serve).
 * You have been given "write" access to the [CPS SOP Repository](https://github.com/CPS-Innovation/digital-sop).
 
+Please download the user guide. (./docs/activities/documentation/Tech Platform User Guide BG edits.docx)
+
 ## Editing existing pages
 
 To edit the content of an existing page
